@@ -74,7 +74,6 @@ export default {
       this.isResumesVisible = false;
     },
     fetchResumes() {
-      // Simulating fetching resumes
       this.resumes = [
         { id: 1, name: 'Resume 1.pdf' },
         { id: 2, name: 'Resume 2.pdf' },
@@ -84,11 +83,10 @@ export default {
       this.isJobFormVisible = false;
     },
     submitJobDescription() {
-      // Logic to add job description (e.g., send to server)
       alert(`Job "${this.jobTitle}" added successfully!`);
       this.jobTitle = '';
       this.jobDescription = '';
-      this.isJobFormVisible = false; // Hide form after submission
+      this.isJobFormVisible = false;
     },
   },
 };
