@@ -30,8 +30,6 @@
 
         let formData = new FormData();
         formData.append("resume", this.resumeFile);
-  
-        // Example for uploading:
         // axios.post('your-upload-endpoint', formData).then(response => { ... });
   
         alert("Resume uploaded successfully!");

@@ -162,10 +162,10 @@ export default {
       alert(`Job "${this.jobTitle}" added successfully!`);
       this.jobTitle = '';
       this.jobDescription = '';
-      this.isJobFormVisible = false; // Hide job form after submission
+      this.isJobFormVisible = false; // Hide after submission
     },
     downloadResume(fileUrl) {
-      // Logic to download resume
+      // download resume
       const link = document.createElement('a');
       link.href = fileUrl;
       link.download = 'Resume.pdf';
@@ -180,7 +180,6 @@ export default {
 
 
 <style scoped>
-/* Same CSS as before */
 .header {
   background-color: #3f51b5;
   color: white;
