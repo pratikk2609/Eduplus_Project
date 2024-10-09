@@ -1,79 +1,127 @@
 <template>
-    <div>
-      <div class="header">
-        <div class="header-title">Eduplus Campus | STUDENT</div>
-        <div class="header-right">
-          <button class="profile-btn" @click="toggleDropdown">S</button>
-          <div class="dropdown" v-if="dropdownVisible">
-            <router-link to="/profile">Profile</router-link>
-            <router-link to="/login" @click="logout">Logout</router-link>
-          </div>
-        </div>
-      </div>
-  
-      <div class="content">
-        <!-- Sidebar -->
-        <div class="sidebar">
-          <a @click="showUploadForm">Upload Resume</a>
-        </div>
-  
-        <!-- Main Content Area -->
-        <div class="main-content">
-          <div v-if="isUploadVisible">
-            <h2>Upload Your Resume</h2>
-            <form @submit.prevent="submitResume">
-              <div class="form-group">
-                <label for="resume">Choose Resume File:</label>
-                <input type="file" id="resume" @change="handleFileUpload" />
-              </div>
-              <button type="submit">Upload</button>
-            </form>
-          </div>
-          <div v-else>
-            <router-view></router-view>
-          </div>
+  <div>
+    <div class="header">
+      <div class="header-title">Eduplus Campus | STUDENT</div>
+      <div class="header-right">
+        <button class="profile-btn" @click="toggleDropdown">S</button>
+        <div class="dropdown" v-if="dropdownVisible">
+          <router-link to="/profile">Profile</router-link>
+          <router-link to="/login" @click="logout">Logout</router-link>
         </div>
       </div>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    data() {
-      return {
-        dropdownVisible: false,
-        isUploadVisible: false,
-        resumeFile: null,
-      };
+
+    <div class="content">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <a @click="showUploadForm">Upload Resume</a>
+        <a @click="fetchApplicationStatus">View Application Status</a>
+      </div>
+
+      <!-- Main Content Area -->
+      <div class="main-content">
+        <!-- Upload Resume Section -->
+        <div v-if="isUploadVisible">
+          <h2>Upload Your Resume</h2>
+          <form @submit.prevent="submitResume">
+            <div class="form-group">
+              <label for="resume">Choose Resume File:</label>
+              <input type="file" id="resume" @change="handleFileUpload" />
+            </div>
+            <button type="submit">Upload</button>
+          </form>
+        </div>
+
+        <!-- Application Status Section -->
+        <div v-if="isStatusVisible">
+          <h2>Your Application Status</h2>
+          <ul>
+            <li v-for="application in applications" :key="application.id">
+              <p><strong>Job Title:</strong> {{ application.jobTitle }}</p>
+              <p><strong>Current Status:</strong> {{ application.status }}</p>
+              <p><strong>Last Update:</strong> {{ application.lastUpdated }}</p>
+              <hr />
+            </li>
+          </ul>
+        </div>
+
+        <div v-else>
+          <router-view></router-view>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      dropdownVisible: false,
+      isUploadVisible: false,
+      isStatusVisible: false,
+      resumeFile: null,
+      applications: [], // Holds application data
+    };
+  },
+  methods: {
+    toggleDropdown() {
+      this.dropdownVisible = !this.dropdownVisible;
     },
-    methods: {
-      toggleDropdown() {
-        this.dropdownVisible = !this.dropdownVisible;
-      },
-      logout() {
-        this.$router.push("/login");
-      },
-      showUploadForm() {
-        this.isUploadVisible = true;
-      },
-      handleFileUpload(event) {
-        this.resumeFile = event.target.files[0];
-      },
-      submitResume() {
-        if (!this.resumeFile) {
-          alert("Please select a file.");
-          return;
-        }
-  
-        let formData = new FormData();
-        formData.append("resume", this.resumeFile);
-  
-        alert("Resume uploaded successfully!");
-        this.isUploadVisible = false; // Hide form after submission
-      },
+    logout() {
+      this.$router.push("/login");
     },
-  };
-  </script>
+    showUploadForm() {
+      this.isUploadVisible = true;
+      this.isStatusVisible = false;
+    },
+    fetchApplicationStatus() {
+      // Simulate an API call to fetch application status from the backend
+      this.applications = [
+        {
+          id: 1,
+          jobTitle: 'Software Engineer',
+          status: 'Shortlisted',
+          lastUpdated: '2024-10-05',
+        },
+        {
+          id: 2,
+          jobTitle: 'Cloud Engineer',
+          status: 'Interview Scheduled',
+          lastUpdated: '2024-10-07',
+        },
+        {
+          id: 3,
+          jobTitle: 'Data Analyst',
+          status: 'Rejected',
+          lastUpdated: '2024-10-08',
+        },
+      ];
+
+      this.isStatusVisible = true;
+      this.isUploadVisible = false;
+    },
+    handleFileUpload(event) {
+      this.resumeFile = event.target.files[0];
+    },
+    submitResume() {
+      if (!this.resumeFile) {
+        alert("Please select a file.");
+        return;
+      }
+
+      let formData = new FormData();
+      formData.append("resume", this.resumeFile);
+
+      alert("Resume uploaded successfully!");
+      this.isUploadVisible = false; // Hide form after submission
+    },
+  },
+};
+</script>
+
+
+
   
   <style scoped>
   .header {
