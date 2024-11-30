@@ -12,38 +12,72 @@
     </div>
 
     <div class="content">
-      <!-- Sidebar -->
+
       <div class="sidebar">
         <a @click="showAddJobForm">Add Job Description</a>
         <a @click="shortlistCandidates">Shortlist Candidates</a>
         <a @click="fetchRankingTable">Ranking Table</a>
       </div>
 
-      <!-- Main Content Area -->
+
       <div class="main-content">
-        <!-- Add Job Form -->
+   
         <div v-if="isJobFormVisible">
           <h2>Add Job Description</h2>
           <form @submit.prevent="submitJobDescription">
             <div class="form-group">
-              <label for="job-title">Job Title:</label>
-              <input type="text" id="job-title" v-model="jobTitle" required />
+              <label for="job-title">Job Title</label>
+              <input type="text" id="job-title" v-model="jobTitle" placeholder="Enter job title" required />
             </div>
             <div class="form-group">
-              <label for="job-description">Job Description:</label>
-              <textarea id="job-description" v-model="jobDescription" required></textarea>
+              <label for="job-description">Job Description</label>
+              <textarea id="job-description" v-model="jobDescription" placeholder="Enter job description" required></textarea>
             </div>
-            <div class="form-group">
-        <label for="num-candidates">Number of Candidates to Shortlist:</label>
-        <input type="number" id="num-candidates" v-model="numCandidates" required min="1" />
-         </div>
-
-            <button type="submit">Add Job</button>
+            <button type="submit">Submit Job Description</button>
           </form>
         </div>
 
-        <!-- Shortlist Candidates Section -->
         <div v-if="isShortlistVisible">
+          <h3>Apply Filters</h3>
+ 
+          <div class="filter-chips">
+            <span v-for="filter in selectedFilters" :key="filter" class="chip">
+              {{ filter }} <button @click="removeFilter(filter)">x</button>
+            </span>
+          </div>
+
+          <div class="filter-options">
+            <label class="filter-option" v-for="option in filterOptions" :key="option.name">
+              <input type="checkbox" :value="option.name" v-model="selectedFilters" />
+              <i :class="option.icon"></i> {{ option.name }}
+            </label>
+          </div>
+
+          <div v-if="selectedFilters.includes('10th')">
+            <label for="10th-score">10th Percentage:</label>
+            <input type="number" v-model="filter10th" placeholder="Enter 10th percentage" />
+          </div>
+
+          <div v-if="selectedFilters.includes('12th')">
+            <label for="12th-score">12th Percentage:</label>
+            <input type="number" v-model="filter12th" placeholder="Enter 12th percentage" />
+          </div>
+
+          <div v-if="selectedFilters.includes('CGPA')">
+            <label for="cgpa">CGPA:</label>
+            <input type="number" v-model="filterCGPA" placeholder="Enter CGPA" />
+          </div>
+
+          <div v-if="selectedFilters.includes('Skills')">
+            <label for="skills">Skills (comma separated):</label>
+            <input type="text" v-model="filterSkills" placeholder="Enter skills" />
+          </div>
+
+          <button @click="applyFilters">Apply Filters</button>
+        </div>
+
+
+        <div v-if="isShortlistVisible && shortlistedResumes.length > 0">
           <h2>Shortlist Candidates</h2>
           <table>
             <thead>
@@ -54,7 +88,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr v-for="(resume, index) in shortlistedResumes" :key="resume.id">
+              <tr v-for="(resume, index) in filteredResumes" :key="resume.id">
                 <td>{{ index + 1 }}</td>
                 <td>{{ resume.name }}</td>
                 <td><button @click="downloadResume(resume.fileUrl)">Download Resume</button></td>
@@ -63,7 +97,6 @@
           </table>
         </div>
 
-        <!-- Ranking Table Section -->
         <div v-if="isRankingTableVisible">
           <h2>Ranking Table</h2>
           <table>
@@ -91,15 +124,10 @@
             </tbody>
           </table>
         </div>
-        <div v-else>
-          <router-view></router-view>
-        </div>
       </div>
     </div>
   </div>
 </template>
-
-
 
 <script>
 export default {
@@ -107,15 +135,25 @@ export default {
     return {
       dropdownVisible: false,
       isJobFormVisible: false,
-      isResumesVisible: false,
-      isRankingTableVisible: false,
       isShortlistVisible: false,
-      isProfilesVisible: false,
+      isRankingTableVisible: false,
       jobTitle: '',
       jobDescription: '',
-      resumes: [], 
-      rankedStudents: [], 
-      shortlistedResumes: [], 
+      resumes: [],
+      rankedStudents: [],
+      shortlistedResumes: [],
+      selectedFilters: [],
+      filterOptions: [
+        { name: '10th', icon: 'fa fa-graduation-cap' },
+        { name: '12th', icon: 'fa fa-graduation-cap' },
+        { name: 'CGPA', icon: 'fa fa-trophy' },
+        { name: 'Skills', icon: 'fa fa-cogs' }
+      ],
+      filter10th: '',
+      filter12th: '',
+      filterCGPA: '',
+      filterSkills: '',
+      filteredResumes: []
     };
   },
   methods: {
@@ -126,58 +164,66 @@ export default {
       this.$router.push("/login");
     },
     showAddJobForm() {
-      
       this.isJobFormVisible = true;
-      this.isResumesVisible = false;
-      this.isRankingTableVisible = false;
       this.isShortlistVisible = false;
-      this.isProfilesVisible = false;
+      this.isRankingTableVisible = false;
     },
     shortlistCandidates() {
-  this.shortlistedResumes = [
-    { id: 1, name: 'John Doe', fileUrl: '/path/to/resume1.pdf' },
-    { id: 2, name: 'Jane Smith', fileUrl: '/path/to/resume2.pdf' },
-    { id: 3, name: 'Michael Johnson', fileUrl: '/path/to/resume3.pdf' },
-  ];
-  this.isShortlistVisible = true;
-  this.isJobFormVisible = false;
-  this.isResumesVisible = false;
-  this.isRankingTableVisible = false;
-  this.isProfilesVisible = false;
-},
-
+      this.isJobFormVisible = false;
+      this.isRankingTableVisible = false;
+      this.isShortlistVisible = true;
+      this.shortlistedResumes = [
+        { id: 1, name: 'John Doe', fileUrl: '/path/to/resume1.pdf' },
+        { id: 2, name: 'Jane Smith', fileUrl: '/path/to/resume2.pdf' },
+        { id: 3, name: 'Michael Johnson', fileUrl: '/path/to/resume3.pdf' },
+      ];
+      this.filteredResumes = [...this.shortlistedResumes];
+    },
     fetchRankingTable() {
-      this.isRankingTableVisible = true;
       this.isJobFormVisible = false;
       this.isShortlistVisible = false;
-      this.isProfilesVisible = false;
+      this.isRankingTableVisible = true;
       this.rankedStudents = [
-    { id: 1, name: 'Student 1', cgpa: 8.5, experience: 2, skills: ['Java', 'Python'], achievements: 'Hackathon Winner', fileUrl: '/path/to/resume1.pdf' },
-    { id: 2, name: 'Student 2', cgpa: 9.1, experience: 1, skills: ['React', 'Node.js'], achievements: 'AWS Certification', fileUrl: '/path/to/resume2.pdf' },
-    { id: 3, name: 'Student 3', cgpa: 8.8, experience: 1, skills: ['C++', 'Django'], achievements: 'Top 10 in Coding Contest', fileUrl: '/path/to/resume3.pdf' },
-  ];
+        { id: 1, name: 'Student 1', cgpa: 8.5, experience: 2, skills: ['Java', 'Python'], achievements: 'Hackathon Winner', fileUrl: '/path/to/resume1.pdf' },
+        { id: 2, name: 'Student 2', cgpa: 9.1, experience: 1, skills: ['React', 'Node.js'], achievements: 'AWS Certification', fileUrl: '/path/to/resume2.pdf' },
+        { id: 3, name: 'Student 3', cgpa: 8.8, experience: 1, skills: ['C++', 'Django'], achievements: 'Top 10 in Coding Contest', fileUrl: '/path/to/resume3.pdf' },
+      ];
     },
     submitJobDescription() {
-      // Logic to submit job description
-      alert(`Job "${this.jobTitle}" added successfully!`);
+      console.log('Job Description Submitted:', this.jobTitle, this.jobDescription);
       this.jobTitle = '';
       this.jobDescription = '';
-      this.isJobFormVisible = false; // Hide after submission
+    },
+    applyFilters() {
+      this.filteredResumes = this.shortlistedResumes.filter(resume => {
+        let match = true;
+        if (this.selectedFilters.includes('10th') && this.filter10th) {
+          match = match && resume['10th'] >= this.filter10th;
+        }
+        if (this.selectedFilters.includes('12th') && this.filter12th) {
+          match = match && resume['12th'] >= this.filter12th;
+        }
+        if (this.selectedFilters.includes('CGPA') && this.filterCGPA) {
+          match = match && resume['CGPA'] >= this.filterCGPA;
+        }
+        if (this.selectedFilters.includes('Skills') && this.filterSkills) {
+          match = match && resume['skills'].includes(this.filterSkills);
+        }
+        return match;
+      });
+    },
+    removeFilter(filter) {
+      const index = this.selectedFilters.indexOf(filter);
+      if (index !== -1) {
+        this.selectedFilters.splice(index, 1);
+      }
     },
     downloadResume(fileUrl) {
-      // download resume
-      const link = document.createElement('a');
-      link.href = fileUrl;
-      link.download = 'Resume.pdf';
-      link.click();
-      
+      window.location.href = fileUrl;
     }
-  },
+  }
 };
 </script>
-
-
-
 
 <style scoped>
 .header {
@@ -281,5 +327,42 @@ th, td {
 
 th {
   background-color: #f4f4f4;
+}
+
+.filter-chips {
+  margin-bottom: 10px;
+}
+
+.chip {
+  display: inline-block;
+  background-color: #3f51b5;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+.chip button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-options {
+  margin-bottom: 20px;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+}
+
+.filter-option input {
+  margin-right: 10px;
+}
+
+.filter-option i {
+  margin-right: 5px;
 }
 </style>
