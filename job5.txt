@@ -1,0 +1,13 @@
+We are seeking a Frontend Developer to create visually appealing and user-friendly web interfaces. The ideal candidate should have a keen eye for design and strong coding skills.
+
+Key Responsibilities:
+- Build responsive web pages using modern frontend technologies.
+- Optimize websites for maximum speed and scalability.
+- Collaborate with designers and backend developers to ensure seamless integration.
+- Debug and resolve cross-browser compatibility issues.
+
+Required Skills:
+- Proficiency in HTML, CSS, and JavaScript.
+- Experience with frameworks like React, Angular, or Vue.js.
+- Knowledge of version control tools like Git.
+- Familiarity with UX/UI principles and best practices.

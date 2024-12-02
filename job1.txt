@@ -1,0 +1,11 @@
+
+We are looking for an Embedded Systems Engineer with experience in developing embedded software for hardware devices. The candidate should be proficient in C/C++, microcontroller programming, and RTOS (Real-Time Operating Systems). You will work on designing, testing, and deploying software on embedded platforms like Arduino, Raspberry Pi, and other microcontroller-based systems.
+
+Skills required:
+
+Expertise in C/C++ for embedded systems
+Familiarity with microcontroller programming (Arduino, Raspberry Pi)
+Experience with real-time operating systems (RTOS)
+Knowledge of hardware/software interfaces (GPIO, SPI, I2C)
+Ability to troubleshoot and debug embedded systems
+Experience with embedded development tools and compilers

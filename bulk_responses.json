@@ -1,0 +1,1971 @@
+[
+    {
+        "file_name": "22110299_HARSHADA_NAVALE_VIIT - Copy.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "SSC 94.4%",
+            "12th or diploma percentage": "HSC 92.5%",
+            "CGPA": "9.26",
+            "skills": [
+                "Java",
+                "Solidity",
+                "Git",
+                "GitHub",
+                "Docker",
+                "VS Code",
+                "Eclipse",
+                "Artificial Intelligence",
+                "Neural Networks",
+                "Deep Learning",
+                "Operating Systems",
+                "DBMS",
+                "MySQL",
+                "Web 3.0",
+                "CI/CD"
+            ]
+        }
+    },
+    {
+        "file_name": "22110299_HARSHADA_NAVALE_VIIT.pdf",
+        "error": "Failed to parse JSON from response: Extra data: line 3 column 1 (char 287). Extracted JSON: {\"college name\": \"Vishwakarma Institute of Information Technology\", \"CGPA\": \"9.26\", \"skills\": [\"Java\", \"Solidity\", \"Git\", \"GitHub\", \"Docker\", \"VS Code\", \"Eclipse\", \"Artificial Intelligence\", \"Neural Networks\", \"Deep Learning\", \"Operating Systems\", \"DBMS\", \"MySQL\", \"Web 3.0\", \"CI/CD\"]}\n\n{\"college name\": \"Chaitanya's International school\", \"10th percentage\": \"SSC 94.4%\", \"skills\": [\"Java\", \"Solidity\", \"Git\", \"GitHub\", \"Docker\", \"VS Code\", \"Eclipse\", \"Artificial Intelligence\", \"Neural Networks\", \"Deep Learning\", \"Operating Systems\", \"DBMS\", \"MySQL\", \"Web 3.0\", \"CI/CD\"]}\n\n{\"college name\": \"S.M.S.Mohite Patil Vidyalaya\", \"12th or diploma percentage\": \"HSC 92.5%\", \"skills\": [\"Java\", \"Solidity\", \"Git\", \"GitHub\", \"Docker\", \"VS Code\", \"Eclipse\", \"Artificial Intelligence\", \"Neural Networks\", \"Deep Learning\", \"Operating Systems\", \"DBMS\", \"MySQL\", \"Web 3.0\", \"CI/CD\"]}"
+    },
+    {
+        "file_name": "22110305_PARAG_TONPE_VIIT.pdf",
+        "error": "Failed to parse JSON from response: Extra data: line 3 column 1 (char 277). Extracted JSON: {\"college name\": \"Vishwakarma Institute Of Information Technology\", \"10th percentage\": \"null\", \"12th or diploma percentage\": \"HSC 87.2\", \"CGPA\": \"8.89\", \"skills\": [\"C C++ Python Java SQL PowerBI Azure Cloud Web Development HTML CSS JavaScript React Node.js Angular Express\"]}\n\n{\"college name\": \"Hutchings High School & Junior College\", \"10th percentage\": \"87.2\", \"12th or diploma percentage\": \"null\", \"CGPA\": \"null\", \"skills\": [\"null\"]}\n\n{\"college name\": \"Rosary School\", \"10th percentage\": \"87.3\", \"12th or diploma percentage\": \"null\", \"CGPA\": \"null\", \"skills\": [\"null\"]}"
+    },
+    {
+        "file_name": "22110307_SARTHAK_AGASE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "null",
+            "12th or diploma percentage": "96%",
+            "CGPA": "8.56",
+            "skills": [
+                "Python",
+                "C/C++",
+                "SQL (MySQL, SQLite3)",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "ReactJs",
+                "NodeJs",
+                "Express",
+                "Django",
+                "FastAPI",
+                "RestAPI",
+                "Bootstrap",
+                "Git",
+                "AWS",
+                "Postman",
+                "MySQL Workbench",
+                "VS Code",
+                "Scikit-Learn",
+                "NLTK",
+                "TensorFlow",
+                "Keras",
+                "Pandas",
+                "NumPy",
+                "Matplotlib",
+                "DBMS",
+                "Machine Learning",
+                "NLP",
+                "Blockchain"
+            ]
+        }
+    },
+    {
+        "file_name": "22110311_SHREYASH_RAHINJ_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute Of Information Technology",
+            "10th percentage": "null",
+            "12th or diploma percentage": "92%",
+            "CGPA": "9.82",
+            "skills": [
+                "Java",
+                "Python",
+                "Dart",
+                "SQL",
+                "JavaScript",
+                "C++",
+                "Tensorflow",
+                "Keras",
+                "Sklearn",
+                "Flutter",
+                "Android Studio(Java)",
+                "Django",
+                "NodeJs",
+                "MySQL",
+                "Postgresql",
+                "MongoDB",
+                "Data Structures",
+                "Algorithms",
+                "DBMS",
+                "Operating Systems",
+                "Computer Networking"
+            ]
+        }
+    },
+    {
+        "file_name": "22110313_SMIT_RAMTEKE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute Of Information Technology",
+            "10th percentage": "null",
+            "12th or diploma percentage": "92%",
+            "CGPA": "9.82",
+            "skills": [
+                "Java",
+                "Python",
+                "Dart",
+                "SQL",
+                "JavaScript",
+                "C++",
+                "Tensorflow",
+                "Keras",
+                "Sklearn",
+                "Flutter",
+                "Android Studio(Java)",
+                "Django",
+                "NodeJs",
+                "MySQL",
+                "Postgresql",
+                "MongoDB",
+                "Data Structures",
+                "Algorithms",
+                "DBMS",
+                "Operating Systems",
+                "Computer Networking"
+            ]
+        }
+    },
+    {
+        "file_name": "22110317_ATHARV_TEMBHURNIKAR_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute Of Information Technology",
+            "10th percentage": "null",
+            "12th or diploma percentage": "92%",
+            "CGPA": "9.49",
+            "skills": [
+                "Java",
+                "Python",
+                "Dart",
+                "SQL",
+                "JavaScript",
+                "C++",
+                "Tensorflow",
+                "Keras",
+                "Sklearn",
+                "Flutter",
+                "Android Studio(Java)",
+                "Django",
+                "NodeJs",
+                "MySQL",
+                "Postgresql",
+                "MongoDB",
+                "Data Structures",
+                "Algorithms",
+                "DBMS",
+                "Operating Systems",
+                "Computer Networking"
+            ]
+        }
+    },
+    {
+        "file_name": "22110318_OM_DEORE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute Of Information Technology",
+            "10th percentage": "null",
+            "12th or diploma percentage": "86.5%",
+            "CGPA": "9.49",
+            "skills": [
+                "C/C++",
+                "OpenGL",
+                "GLFW",
+                "Linux",
+                "Git",
+                "Java",
+                "Bash",
+                "Vim"
+            ]
+        }
+    },
+    {
+        "file_name": "22110325_SARVESH_BODAKHE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute Of Information Technology",
+            "10th percentage": "null",
+            "12th or diploma percentage": "86.5%",
+            "CGPA": "9.49",
+            "skills": [
+                "C/C++",
+                "OpenGL",
+                "GLFW",
+                "Linux",
+                "Git",
+                "Java",
+                "Bash",
+                "Vim"
+            ]
+        }
+    },
+    {
+        "file_name": "22110329_BUDDHABHUSHAN_SIRSAT_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute Of Information Technology",
+            "10th percentage": "null",
+            "12th or diploma percentage": "86.5%",
+            "CGPA": "9.49",
+            "skills": [
+                "C/C++",
+                "OpenGL",
+                "GLFW",
+                "Linux",
+                "Git",
+                "Java",
+                "Bash",
+                "Vim"
+            ]
+        }
+    },
+    {
+        "file_name": "22110330_SAKSHI_BHOS_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute Of Information Technology",
+            "10th percentage": "null",
+            "12th or diploma percentage": "86.5%",
+            "CGPA": "9.49",
+            "skills": [
+                "C/C++",
+                "OpenGL",
+                "GLFW",
+                "Linux",
+                "Git",
+                "Java",
+                "Bash",
+                "Vim"
+            ]
+        }
+    },
+    {
+        "file_name": "22110338_PRANALI_MIND_VIIT.pdf",
+        "response": {
+            "college name": "Shreemant Shivajiraje English Medium School",
+            "10th percentage": "89.60%",
+            "12th or diploma percentage": null,
+            "CGPA": null,
+            "skills": [
+                "Java",
+                "MySQL",
+                "Swing",
+                "AWT"
+            ]
+        }
+    },
+    {
+        "file_name": "22110342_DARSHAN_KOTECHA_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute Of Information Technology",
+            "10th percentage": null,
+            "12th or diploma percentage": null,
+            "CGPA": null,
+            "skills": [
+                "Java",
+                "Python",
+                "SQL",
+                "Tailwind-CSS",
+                "Bootstrap",
+                "Javascript",
+                "React.js",
+                "Node.js",
+                "Express.js",
+                "Next.js",
+                "MongoDB",
+                "Git",
+                "Github",
+                "Docker",
+                "Ansible"
+            ]
+        }
+    },
+    {
+        "file_name": "22110353_SAMEEKSHA_HEDAU_VIIT.pdf",
+        "error": "Failed to parse JSON from response: Extra data: line 8 column 1 (char 185). Extracted JSON: {\n  \"college name\": \"Vishwakarma Institute Of Information Technology\",\n  \"10th percentage\": null,\n  \"12th or diploma percentage\": null,\n  \"CGPA\": null,\n  \"skills\": [\"Java\", \"Python\"]\n}\n```\n\nNote: Since the 10th and 12th percentage details are not present in the resume, they are set to `null`. Similarly, CGPA is also not mentioned, so it's set to `null`.\n\n**AI**\n\n```\n{\n  \"college name\": \"Vishwakarma Institute Of Information Technology\",\n  \"10th percentage\": null,\n  \"12th or diploma percentage\": null,\n  \"CGPA\": null,\n  \"skills\": [\"Java\", \"Python\"]\n}"
+    },
+    {
+        "file_name": "22110356_SANIKA_HOLEY_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": null,
+            "12th or diploma percentage": null,
+            "CGPA": null,
+            "skills": [
+                "SQL",
+                "Python",
+                "Machine Learning",
+                "C++",
+                "Microsoft Power BI",
+                "Data Analysis"
+            ]
+        }
+    },
+    {
+        "file_name": "22110358_ASHWINI_CHAUDHARI_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": null,
+            "12th or diploma percentage": "97.00%",
+            "CGPA": "8.88",
+            "skills": [
+                "Programming Languages: C++, Python",
+                "Database and Language:",
+                "MySQL, SQL",
+                "Version Control Tools and IDE: Git, Github, Visual Studio Code",
+                "Course Work: Database and management system, Object-Oriented Programming, Data Structures, and Algorithms",
+                "Soft Skills: Collaboration, Communication, Planning, Teamwork, Time Management, Leadership"
+            ]
+        }
+    },
+    {
+        "file_name": "22110366_ADITYA_VERMA_VIIT.pdf",
+        "response": {
+            "college name": "Vishwafiarma Institute of Information Technology",
+            "10th percentage": null,
+            "12th or diploma percentage": "94.8 / 100",
+            "CGPA": "9.68 / 10",
+            "skills": [
+                "Presentation Content Writing",
+                "Data Science",
+                "Analytics",
+                "Programming languages and tools relevant to data analysis"
+            ]
+        }
+    },
+    {
+        "file_name": "22110372_NIDHI_AGRAWAL_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "null",
+            "12th or diploma percentage": "97.67%",
+            "CGPA": "9.43",
+            "skills": [
+                "Language: C, C++, Python",
+                "Web Technologies: HTML, CSS, JavaScript, SQL",
+                "Software: Figma",
+                "Operating System: Windows, Ubuntu"
+            ]
+        }
+    },
+    {
+        "file_name": "22110386_SANSKRUTI_YADAV_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "null",
+            "12th or diploma percentage": "93.50%",
+            "CGPA": "9.32",
+            "skills": [
+                "Languages: C++,Python,Java,HTML,C",
+                "Frameworks: Flutter",
+                "Databases: SQL, Firebase",
+                "Coursework : Machine Learning",
+                "Computer Networks",
+                "Algorithms and Data Structure",
+                "Object-oriented programming",
+                "Operating System",
+                "Languages: English, Marathi, Hindi",
+                "Soft Skills: Team Management, Adaptability, Leadership"
+            ]
+        }
+    },
+    {
+        "file_name": "22110392_VAIBHAVI_PATHAK_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "null",
+            "12th or diploma percentage": "93.8%",
+            "CGPA": "9.45",
+            "skills": [
+                "Programming language C,C++, Python, Oops",
+                "Web d HTML,CSS,Javascript,Node.js, Express.js,React",
+                "Database MySQL,Mongodb",
+                "Data Visualization Power Bi,Tableau",
+                "Cloud AWS",
+                "Artificial Intelligence ML, NLP",
+                "Soft Skills Team Management, Leadership,Problem solving",
+                "Courses CCNA:Introduction to Networks, CCNA Data Analysis with Python, IBM Skillsbuild Web fundamentals: Web development with HTML, Infosys Springboard Generative AI for business leaders, LinkedIn learning What is Gen AI, LinkedIn Learning Young Professional Course, TCS ion Awards Best Women's Participation, Department of Physical Education,VIIT Education B.tech"
+            ]
+        }
+    },
+    {
+        "file_name": "22110418_SAHIL_DHOTRE_VIIT.pdf",
+        "response": {
+            "college_name": "VISHWAKARMA INSTITUTE OF INFORMATION TECHNOLOGY",
+            "10th_percentage": null,
+            "12th_percentage": "89%",
+            "CGPA": "9.31/10",
+            "skills": [
+                "Languages & Frameworks: Java (Major), C++, C, Python",
+                "Databases: MySQL, MongoDB",
+                "Operating System: Proficient in operating systems including Windows, Linux, and macOS.",
+                "Web Development: Full Stack Development (HTML, CSS, JavaScript, Bootstrap, Node Js, Express, React)",
+                "Data Structure and Algorithms - Udemy",
+                "Algorithms in Java : Live problem solving & Design Techniques"
+            ]
+        }
+    },
+    {
+        "file_name": "22110420_SAYEE_PANCHAL_VIIT.pdf",
+        "response": {
+            "college name": "Savitribai Phule Pune University",
+            "12th percentage": null,
+            "CGPA": "9.04"
+        }
+    },
+    {
+        "file_name": "22110424_AMIT_NAIK_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": null,
+            "12th percentage": "88.67",
+            "CGPA": "8.93",
+            "skills": [
+                "C",
+                "CPP",
+                "Python",
+                "Javascript",
+                "HTML",
+                "CSS",
+                "Machine Learning",
+                "Git",
+                "Github",
+                "SQL",
+                "numpy",
+                "pandas",
+                "matplotlib",
+                "scikit-learn",
+                "PowerBI",
+                "Tableau"
+            ]
+        }
+    },
+    {
+        "file_name": "22110438_SHREYASH_NALAWADE_VIIT.pdf",
+        "response": {
+            "college name": "Persistent Digital Commerce",
+            "10th percentage": null,
+            "12th percentage": null,
+            "CGPA": null,
+            "skills": [
+                "expressJs",
+                "NodeJs",
+                "Mongoose",
+                "mongoDB aggrigation pipelines",
+                "Git",
+                "GitHub",
+                "Trello"
+            ]
+        }
+    },
+    {
+        "file_name": "22110445_SUYASH_PHAPALE_VIIT.pdf",
+        "response": {
+            "college_name": "VIT University",
+            "10th_percentage": "null",
+            "12th_percentage": "null",
+            "CGPA": "null",
+            "skills": [
+                "Data Analyst",
+                "Backend Developer",
+                "Machine Learning",
+                "Python",
+                "Java",
+                "C and C++",
+                "HTML, CSS, JavaScript",
+                "Frontend Development",
+                "NodeJS Master Course",
+                "Java Master Course",
+                "Python for Data Science",
+                "Design Thinking",
+                "MS-Office Certified Course- Excel",
+                "MS-Office Certified Course- Word"
+            ]
+        }
+    },
+    {
+        "file_name": "22110449_Atharva_Pandit_VIIT.pdf",
+        "response": {
+            "college_name": "Savitribai Phule Pune University",
+            "10th_percentage": null,
+            "12th_percentage": null,
+            "CGPA": "9.24",
+            "skills": [
+                "Web Development",
+                "Artificial Intelligence",
+                "Machine Learning",
+                "Cloud Computing",
+                "HTML, CSS, JavaScript",
+                "React.js",
+                "Angular",
+                "MongoDB",
+                "Express",
+                "Node.js",
+                "SQL",
+                "Java",
+                "Python",
+                "C",
+                "C++",
+                "JavaScript",
+                "Amazon Web Services"
+            ]
+        }
+    },
+    {
+        "file_name": "22110453_NIDHI_AGRAWAL_VIIT.pdf",
+        "response": {
+            "college_name": "Vishwakarma Institute of Information Technology",
+            "10th_percentage": null,
+            "12th_percentage": null,
+            "CGPA": "9.36",
+            "skills": [
+                "Programming Languages - C, C++ (DSA & OOPS ), Java, Python",
+                "Web Development Languages - HTML, CSS, JavaScript",
+                "Databases - MySQL",
+                "Data Visualization - PowerBI",
+                "Movie Website: Disney+ Hotstar Clone | HTML, CSS, JS",
+                "Bank Management System | Java, MySQL",
+                "Subjective Answer Evaluation using Machine Learning | Python",
+                "Mastering Data Structures & Algorithm using C and C++",
+                "The Complete 2023 Web Development Bootcamp",
+                "Interpersonal Skills"
+            ]
+        }
+    },
+    {
+        "file_name": "22110464_SHRAVANI_DHOBALE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "97%",
+            "12th or diploma percentage": null,
+            "CGPA": "9.06",
+            "skills": [
+                "Java, Html, Python, SQL, Tailwind-CSS, Bootstrap , JavaScript , React.js , Node.js , Next.js , MongoDB",
+                "Jira, Docker, Github, Git",
+                "Professional ethics, Management, Problem solving , Team Work , Leadership",
+                "Entrepreneurship Development Cell",
+                "Web Development Bootcamp Udemy",
+                "Machine learning specialization Coursera",
+                "Software Engineering Infosys Springboard"
+            ]
+        }
+    },
+    {
+        "file_name": "22110477_ABHISHEK_KATARE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "74.46%",
+            "12th or diploma percentage": "HSC (74.46%)",
+            "CGPA": "8.99/10",
+            "skills": [
+                "C, C++, Python, Data Structures, Algorithms, SQL, OOP, Operating System, Tutoring, Time Management, Leadership, Teamwork",
+                "Accounts & Passwords Management System",
+                "Stock Price Analysis & Prediction System",
+                "Credit Eligibility using Machine Learning & Tableau",
+                "Mastering Data Structures & Algorithms using C and C++",
+                "Object-oriented Programming in C++"
+            ]
+        }
+    },
+    {
+        "file_name": "22110478_SHASHANK_BANKAR_VIIT.pdf",
+        "response": {
+            "college name": "Shree Shivaji Maratha High School",
+            "10th percentage": "93.4",
+            "12th or diploma percentage": null,
+            "CGPA": null,
+            "skills": [
+                "C++, Java Developer Tools: Adobe Photoshop, Canva, Adobe Premier Pro, Microsoft Power BI Other skills: Problem Solving, Competitive Programming, Web Development, Graphics Design, Video Editing Soft Skills: Public Speaking, Team Co-ordination, Attention to Detail Certifications \u2022 Data Structures and Algorithms using Java \u2022 Introduction to Data Science Extra-curricular Gandharva VIIT 2024 \u2013 Present Content and Social Media Secretary VIIT,Pune Factovation 2020 \u2013 2021 Content Designer Factovation Competitive Exam Cell 2022 \u2013 2023 Design Head VIIT,Pune Women Empowerment Cell 2022 \u2013 2023 Social Media Head VIIT,Pune Languages \u2022 English, Hindi, Marathi Interests \u2022 Graphic Designing, Hiking, Sports (Kabaddi, Cricket) Achievements \u2022 MIT WPU National Level Kabaddi League Silver medal"
+            ]
+        }
+    },
+    {
+        "file_name": "22110479_VAIBHAV_GUTTE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute Information Technology",
+            "10th percentage": "88%",
+            "12th or diploma percentage": null,
+            "CGPA": "9.18",
+            "skills": [
+                "Operating System",
+                "Computer Networks",
+                "Object Oriented Programming",
+                "SQL",
+                "React",
+                "HTML, CSS",
+                "JavaScript",
+                "Frameworks & Libraries",
+                "Git",
+                "Github"
+            ]
+        }
+    },
+    {
+        "file_name": "22110481_RAHUL_SHELKE_VIIT.pdf",
+        "response": {
+            "college name": "Viswakarma Institute of Information Technology",
+            "10th percentage": "93.60%",
+            "12th or diploma percentage": "75.54%",
+            "CGPA": "9.54/10.0",
+            "skills": [
+                "Java",
+                "Python",
+                "MySQL",
+                "Kotlin",
+                "English",
+                "Hindi",
+                "Marathi"
+            ]
+        }
+    },
+    {
+        "file_name": "22110482_SHRUTI_DHAPARE_VIIT.pdf",
+        "response": {
+            "college name": "Viswakarma Institute of Information Technology",
+            "10th percentage": "93.60%",
+            "12th or diploma percentage": "75.54%",
+            "CGPA": "9.54/10.0",
+            "skills": [
+                "Java",
+                "Python",
+                "MySQL",
+                "Kotlin",
+                "English",
+                "Hindi",
+                "Marathi"
+            ]
+        }
+    },
+    {
+        "file_name": "22110497_PRATIK_YERME_VIIT.pdf",
+        "response": {
+            "college name": "Rajarshi Shahu Vidyalaya, Pandharkawada",
+            "10th percentage": "81%",
+            "12th or diploma percentage": null,
+            "CGPA": "8.95",
+            "skills": [
+                "Python",
+                "MySQL",
+                "JavaScript",
+                "Bootstrap",
+                "Hindi"
+            ]
+        }
+    },
+    {
+        "file_name": "22110508_SIDDHI_JADHAVRAO_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "95.40%",
+            "12th or diploma percentage": "97.67%",
+            "CGPA": "9.45",
+            "skills": [
+                "Python",
+                "Machine Learning",
+                "Java",
+                "C/C++",
+                "Git",
+                "GitHub",
+                "Algorithms and Data Structure",
+                "OS",
+                "Databases",
+                "MySQL",
+                "SQL",
+                "Amazon Web Services",
+                "AI Tools",
+                "Flutter",
+                "DART",
+                "Firebase"
+            ]
+        }
+    },
+    {
+        "file_name": "22110511_APURVA_BELSARE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "84.6%",
+            "12th or diploma percentage": "96.83%",
+            "CGPA": "8.93",
+            "skills": [
+                "Python",
+                "SQL",
+                "Data Visualization",
+                "Machine Learning",
+                "Excel",
+                "Data Analysis"
+            ]
+        }
+    },
+    {
+        "file_name": "22110524_AKASH_KALSHETTI_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "89.00%",
+            "12th or diploma percentage": "None",
+            "CGPA": "None",
+            "skills": [
+                "Java",
+                "Python",
+                "Data Analysis",
+                "MySQL",
+                "UI/UX",
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "JavaScript",
+                "AWS Cloud",
+                "3D Modeling",
+                "English",
+                "Marathi",
+                "Hindi"
+            ]
+        }
+    },
+    {
+        "file_name": "22110528_Priyanka_Waghaskar_VIIT.pdf",
+        "error": "Failed to parse JSON from response: Extra data: line 13 column 1 (char 294). Extracted JSON: {\n  \"college name\": \"MJS College Shrigonda\",\n  \"10th percentage\": \"92.83%\",\n  \"12th or diploma percentage\": \"None\",\n  \"CGPA\": null,\n  \"skills\": [\n    \"Programming Languages: Java, Python, HTML, CSS, C/C++\",\n    \"Others: OOPS, DSA, DBMS, OS\",\n    \"Soft Skills: Teamwork, Time Management\"\n  ]\n}\n\n**AI**\n\n{\n  \"college name\": \"Vishwakarma Institute of Information Technology Pune\",\n  \"10th percentage\": \"89.00%\",\n  \"12th or diploma percentage\": null,\n  \"CGPA\": null,\n  \"skills\": [\n    \"Java\",\n    \"Python\",\n    \"Data Analysis\",\n    \"MySQL\",\n    \"UI/UX\",\n    \"HTML\",\n    \"CSS\",\n    \"Bootstrap\",\n    \"JavaScript\",\n    \"AWS Cloud\",\n    \"3D Modeling\",\n    \"English\",\n    \"Marathi\",\n    \"Hindi\"\n  ]\n}"
+    },
+    {
+        "file_name": "22110533_SIDHESHWAR_CHOTHAVE_VIIT.pdf",
+        "error": "Failed to parse JSON from response: Extra data: line 14 column 1 (char 497). Extracted JSON: {\n  \"college name\": \"Vishwakarma Institute of Information Technology Pune\",\n  \"10th percentage\": null,\n  \"12th or diploma percentage\": null,\n  \"CGPA\": null,\n  \"skills\": [\n    \"Programming Languages: C/C++, Python, Java , Verilog .\",\n    \"Technical Skills: Machine Learning , OOP\u2019s , DSA , Operating System Concepts .\",\n    \"Software Tools: Vivado ,Proteus, LTSPICE , Multisim, Eclipse, Jupyter Notebook.\",\n    \"Soft Skills: Communication , Time Management, Adaptability, Analytical Skill.\"\n  ]\n}\n\n**AI**\n\n{\n  \"college name\": null,\n  \"10th percentage\": \"89.00%\",\n  \"12th or diploma percentage\": null,\n  \"CGPA\": null,\n  \"skills\": [\n    \"Java\",\n    \"Python\",\n    \"Data Analysis\",\n    \"MySQL\",\n    \"UI/UX\",\n    \"HTML\",\n    \"CSS\",\n    \"Bootstrap\",\n    \"JavaScript\",\n    \"AWS Cloud\",\n    \"3D Modeling\",\n    \"English\",\n    \"Marathi\",\n    \"Hindi\"\n  ]\n}"
+    },
+    {
+        "file_name": "22110540_PRAFULLA_BADGUJAR_VIIT.pdf",
+        "error": "Failed to parse JSON from response: Extra data: line 16 column 1 (char 708). Extracted JSON: {\n  \"college name\": \"Vishwakarma Institute of Information Technology Pune\",\n  \"10th percentage\": null,\n  \"12th or diploma percentage\": \"96.16%\",\n  \"CGPA\": \"9.15\",\n  \"skills\": [\n    \"Programming Languages: C++ , JavaScript , Python ,JAVA\",\n    \"Database and Language: Experience in Mongo DB, MySQL, SQL\",\n    \"Frameworks: working experience in React JS, Express JS, Node JS, Bootstrap\",\n    \"Tools: Git, Github, Visual Studio Code\",\n    \"Course Work: Database and management system, Object-Oriented Programming, Software Development Computer Networks, Operation Systems, Data Structures, and Algorithms\",\n    \"Soft Skills: Collaboration, Communication, Planning, Teamwork, Time Management, Leadership\"\n  ]\n}\n\n**AI**\n\n{\n  \"college name\": null,\n  \"10th percentage\": \"89.00%\",\n  \"12th or diploma percentage\": null,\n  \"CGPA\": null,\n  \"skills\": [\n    \"Java\",\n    \"Python\",\n    \"Data Analysis\",\n    \"MySQL\",\n    \"UI/UX\",\n    \"HTML\",\n    \"CSS\",\n    \"Bootstrap\",\n    \"JavaScript\",\n    \"AWS Cloud\",\n    \"3D Modeling\",\n    \"English\",\n    \"Marathi\",\n    \"Hindi\"\n  ]\n}"
+    },
+    {
+        "file_name": "22110544_SEJAL_PARATE_VIIT.pdf",
+        "error": "Failed to parse JSON from response: Extra data: line 22 column 1 (char 475). Extracted JSON: {\n  \"college name\": \"Vishwakarma Institute Of Information Technology, Pune\",\n  \"10th percentage\": null,\n  \"12th or diploma percentage\": \"95.33%\",\n  \"CGPA\": \"9.29\",\n  \"skills\": [\n    \"Python\",\n    \"SQL\",\n    \"C/C++\",\n    \"Machine Learning\",\n    \"Deep Learning\",\n    \"Data Science\",\n    \"Natural Language Processing (NLP)\",\n    \"Large Language Models (LLMs)\",\n    \"Database Management System (DBMS)\",\n    \"Computer Vision\",\n    \"Statistics\",\n    \"Operating System (OS)\"\n  ]\n}\n\n**AI:**\n\n{\n  \"college name\": null,\n  \"10th percentage\": null,\n  \"12th or diploma percentage\": null,\n  \"CGPA\": null,\n  \"skills\": [\n    \"Python\",\n    \"SQL\",\n    \"C/C++\",\n    \"Machine Learning\",\n    \"Deep Learning\",\n    \"Data Science\",\n    \"Natural Language Processing (NLP)\",\n    \"Large Language Models (LLMs)\",\n    \"Database Management System (DBMS)\",\n    \"Computer Vision\",\n    \"Statistics\",\n    \"Operating System (OS)\"\n  ]\n}"
+    },
+    {
+        "file_name": "22110551_DEVESH_RATHI_VIIT.pdf",
+        "error": "Failed to parse JSON from response: Extra data: line 23 column 1 (char 355). Extracted JSON: {\n  \"college name\": \"Vishwakarma Institute of Information Technology\",\n  \"10th percentage\": null,\n  \"12th or diploma percentage\": \"85.67\",\n  \"CGPA\": \"9.1\",\n  \"skills\": [\n    \"C++\",\n    \"Python\",\n    \"Javascript\",\n    \"HTML5\",\n    \"CSS3\",\n    \"Java\",\n    \"React\",\n    \"Flask\",\n    \"Django\",\n    \"Express.js\",\n    \"Node.js\",\n    \"MongoDB\",\n    \"SQL\"\n  ]\n}\n\n{\n  \"college name\": null,\n  \"10th percentage\": null,\n  \"12th or diploma percentage\": \"85.67\",\n  \"CGPA\": \"9.1\",\n  \"skills\": [\n    \"C++\",\n    \"Python\",\n    \"Javascript\",\n    \"HTML5\",\n    \"CSS3\",\n    \"Java\",\n    \"React\",\n    \"Flask\",\n    \"Django\",\n    \"Express.js\",\n    \"Node.js\",\n    \"MongoDB\",\n    \"SQL\"\n  ]\n}"
+    },
+    {
+        "file_name": "22110553_PRANIT_LONKAR_VIIT.pdf",
+        "response": {
+            "college_name": "B.R.A.C.T's Vishwakarma Institute of Information Technology",
+            "10th_percentage": "97.2%",
+            "12th_percentage": "90%",
+            "CGPA": "9.2",
+            "skills": [
+                "Python",
+                "Java",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "Bootstrap",
+                "jQuery",
+                "React",
+                "Next.js",
+                "Node.js",
+                "Express.js",
+                "EJS",
+                "MySQL",
+                "MongoDB",
+                "Mongoose",
+                "TensorFlow",
+                "PyTorch",
+                "Convolutional Neural Networks (CNN)",
+                "TinyLLama Language Model (LLM)",
+                "Generative AI",
+                "Speech Recognition"
+            ]
+        }
+    },
+    {
+        "file_name": "22110554_AASHI_GUPTA_VIIT.pdf",
+        "response": {
+            "college_name": "Vishwakarma Institute of Information Technology",
+            "10th_percentage": "93%",
+            "12th_percentage": "94.2%",
+            "CGPA": "9.7",
+            "skills": [
+                "C",
+                "C++",
+                "Python",
+                "JAVA",
+                "DSA",
+                "Artificial Intelligence",
+                "Machine Learning",
+                "Deep Learning",
+                "HTML",
+                "CSS",
+                "JS",
+                "SQL",
+                "MongoDB"
+            ]
+        }
+    },
+    {
+        "file_name": "22110556_SANKET_PATIL_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute Of Information Technology",
+            "10th percentage": "93.4",
+            "12th or diploma percentage": null,
+            "CGPA": "9.05 / 10.00"
+        }
+    },
+    {
+        "file_name": "22110562_CHITTOSH_MESHRAM_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute Of Information Technology",
+            "10th percentage": "90%",
+            "12th or diploma percentage": "77.6%",
+            "CGPA": "8.77",
+            "skills": [
+                "C++",
+                "HTML",
+                "CSS",
+                "Data structures and Algorithms",
+                "OOPS",
+                "DBMS",
+                "Operating System"
+            ]
+        }
+    },
+    {
+        "file_name": "22110627_AKSHITA_KOLTE_VIIT.pdf",
+        "response": {
+            "college_name": "Rajarshi Shahu Jr. College, Buldana",
+            "10th_percentage": "95.33%",
+            "12th_percentage": null,
+            "CGPA": "9.3",
+            "skills": [
+                "C",
+                "C++",
+                "Java",
+                "Javascript",
+                "HTML",
+                "CSS",
+                "Python",
+                "Arduino",
+                "8051 microcontroller",
+                "ESP8266",
+                "ESP32 WROOM",
+                "Simulation softwares - Proteus, Multisim, KiCad, EasyEDA for PCB building",
+                "Microsoft softwares like Word, PowerPoint, Excel",
+                "Linux operating system",
+                "Power BI, Eclipse, Matlab, Scilab, Keil uVision5, Arduino IDE, Atmel Studio, JupyterNotebook, Canva"
+            ]
+        }
+    },
+    {
+        "file_name": "22110629_CHHANDAVI_GOWARDHAN_VIIT.pdf",
+        "error": "Failed to parse JSON from response: Extra data: line 24 column 1 (char 591). Extracted JSON: {\n  \"college_name\": \"Rajarshi Shahu Jr. College, Buldana\",\n  \"10th_percentage\": \"95.33%\",\n  \"12th_percentage\": null,\n  \"CGPA\": \"9.3\",\n  \"skills\": [\n    \"C\",\n    \"C++\",\n    \"Java\",\n    \"Javascript\",\n    \"HTML\",\n    \"CSS\",\n    \"Python\",\n    \"Arduino\",\n    \"8051 microcontroller\",\n    \"ESP8266\",\n    \"ESP32 WROOM\",\n    \"Simulation softwares - Proteus, Multisim, KiCad, EasyEDA for PCB building\",\n    \"Microsoft softwares like Word, PowerPoint, Excel\",\n    \"Linux operating system\",\n    \"Power BI, Eclipse, Matlab, Scilab, Keil uVision5, Arduino IDE, Atmel Studio, JupyterNotebook, Canva\"\n  ]\n}\n```\n\n```\n{\n  \"college_name\": \"Chhandavi Gowardhan\",\n  \"10th_percentage\": null,\n  \"12th_or_diploma_percentage\": \"95.4%\",\n  \"CGPA\": null,\n  \"skills\": [\n    \"Python\",\n    \"Java\",\n    \"Data Structures\",\n    \"Problem Solving\",\n    \"Digital Systems\",\n    \"OOPS\",\n    \"English\",\n    \"Marathi\",\n    \"Hindi\"\n  ]\n}"
+    },
+    {
+        "file_name": "22110633_ATHARVA_NANDURKAR_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "94.5",
+            "12th or diploma percentage": "93.5",
+            "CGPA": "9.23",
+            "skills": [
+                "C++",
+                "Python",
+                "Machine Learning",
+                "Natural Language Processing",
+                "Mathematics For ML",
+                "Tableau",
+                "SQL",
+                "Frontend",
+                "Streamlit",
+                "Firebase",
+                "AWS",
+                "DSA"
+            ]
+        }
+    },
+    {
+        "file_name": "22110635_SRISHTI_GUPTA_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "94.5",
+            "12th or diploma percentage": "93.5",
+            "CGPA": "9.23",
+            "skills": [
+                "Data Analytics",
+                "Data Visualization",
+                "Python",
+                "MySQL",
+                "MS Excel"
+            ]
+        }
+    },
+    {
+        "file_name": "22110637_SHREYA_MAHALLE_VIIT.pdf",
+        "response": {
+            "college name": "BRACT's Vishwakarma Institute of Information Technology",
+            "10th percentage": "98%",
+            "12th or diploma percentage": null,
+            "CGPA": "8.94",
+            "skills": [
+                "Data Science",
+                "Strong interpersonal communication",
+                "Data Analysis",
+                "Fast Learner",
+                "Java",
+                "SQL"
+            ]
+        }
+    },
+    {
+        "file_name": "22110646_SOHAM_WADEKAR_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "91.6%",
+            "12th percentage": "90.5%",
+            "CGPA": null,
+            "skills": [
+                "Intermediate C/C++",
+                "Advanced Python",
+                "Data Analytics",
+                "Machine and Deep Learning",
+                "Public Speaking",
+                "Digital Designing (Canva)",
+                "Social Media Outreach",
+                "Leading a Team",
+                "Basic Education/Schooling (SSC)",
+                "Astronomy (Stargazing)",
+                "Learning German",
+                "Reading Books of various genre",
+                "Playing Badminton"
+            ]
+        }
+    },
+    {
+        "file_name": "22110705_PRAJWAL_PATIL_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "90 / 100",
+            "12th or diploma percentage": null,
+            "CGPA": "8.95 / 10.00",
+            "skills": [
+                "C/C++",
+                "Java",
+                "JavaScript",
+                "Python",
+                "React.js",
+                "Express.js",
+                "Node js",
+                "Bootstrap",
+                "Tailwind",
+                "Stripe Payment",
+                "Tableau",
+                "Mongodb",
+                "SQL",
+                "Firebase",
+                "Appwrite",
+                "AWS",
+                "Data Structures",
+                "Algorithms",
+                "Operating System",
+                "Networking",
+                "Basics of Arti\ufb01cial Intelligence and Machine Learning",
+                "API",
+                "Cloud Computing"
+            ]
+        }
+    },
+    {
+        "file_name": "22110709_PRASAD_KANAKGIRI_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "90 / 100",
+            "12th or diploma percentage": "94.17",
+            "CGPA": "8.79/10.0",
+            "skills": [
+                "SQL",
+                "Python",
+                "C++",
+                "Java",
+                "JavaScript",
+                "Data Analysis",
+                "Data Science",
+                "Data Structures",
+                "Intermediate Excel",
+                "Power BI",
+                "Machine Learning",
+                "Machine Learning Models",
+                "Deep Learning",
+                "Object Oriented Programming"
+            ]
+        }
+    },
+    {
+        "file_name": "22110712_SANDESH_BUCHKUL_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "93.4",
+            "12th or diploma percentage": "97.33",
+            "CGPA": "9.03/10",
+            "skills": [
+                "SQL",
+                "Python",
+                "C++",
+                "Java",
+                "JavaScript",
+                "Data Analysis",
+                "Data Science",
+                "Data Structures",
+                "Intermediate Excel",
+                "Power BI",
+                "Machine Learning",
+                "Machine Learning Models",
+                "Deep Learning",
+                "Object Oriented Programming"
+            ]
+        }
+    },
+    {
+        "file_name": "22110713_SHIVAM_YELGIRE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institite of Information Technology, Pune",
+            "10th percentage": "95.83%",
+            "12th or diploma percentage": null,
+            "CGPA": "8.91",
+            "skills": [
+                "C/Cpp",
+                "Javascript",
+                "HTML+CSS",
+                "Python",
+                "Java",
+                "ReactJS/TS",
+                "Redux",
+                "Cpp STL",
+                "Flask",
+                "Python Lib",
+                "NodeJs",
+                "ExpressJs",
+                "Machine Learning",
+                "UI/UX",
+                "VScode",
+                "Git",
+                "Github",
+                "Figma",
+                "Firebase",
+                "MongoDB(basic)",
+                "MySQL(basic)"
+            ]
+        }
+    },
+    {
+        "file_name": "22110724_GANESH_JOSHI_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "null",
+            "12th or diploma percentage": "90+",
+            "CGPA": "8.95",
+            "skills": [
+                "Data manipulation and ETL workloads",
+                "Batch processing and data manipulation",
+                "Web Security",
+                "JWT algorithm implementation",
+                "Python and Pandas",
+                "MobileNetV2",
+                "OCR based technologies",
+                "Home screen launcher apps",
+                "Voice-based navigation",
+                "AI model development",
+                "Customer Management",
+                "Distribution Network",
+                "Marketing products",
+                "Data cleaning",
+                "Data normalization",
+                "Grouping and aggregation",
+                "Data manipulation pipeline design pattern",
+                "Builder design pattern for data operations",
+                "Data security vulnerability assessment",
+                "Token based authentication and security",
+                "Session based authentication",
+                "Stateless and efficient authentication",
+                "Home screen launcher app development",
+                "Mobile application development",
+                "Problem solving in hackathons",
+                "RBI hackathon participation",
+                "Microsoft's White Paper",
+                "Voice-based navigation",
+                "AI model development",
+                "Data manipulation and ETL workloads",
+                "Data security vulnerability assessment",
+                "Token based authentication and security"
+            ]
+        }
+    },
+    {
+        "file_name": "22110728_SANKET_FULZELE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "null",
+            "12th or diploma percentage": "90+",
+            "CGPA": "8.95",
+            "skills": [
+                "Data manipulation and ETL workloads",
+                "Batch processing and data manipulation",
+                "Web Development",
+                "Predictive Analytics",
+                "Machine Learning",
+                "Python Libraries",
+                "OpenCV, Pandas, NumPy, Matplotlib, PyTorch, Keras, TenserFlow Scikit-learn",
+                "Python SQL C/C++ C# Java HTML CSS Javascript"
+            ]
+        }
+    },
+    {
+        "file_name": "22110741_SAHIL_PHARANDE_VIIT.pdf",
+        "response": {
+            "college name": "Karmaveer Bhaurao Patil College",
+            "10th percentage": "85%",
+            "12th or diploma percentage": "79%",
+            "CGPA": "null",
+            "skills": [
+                "NewsMonkey - A News App(using React.js and News API)",
+                "iNotebook: A Modern Digital Notebook Application (using React.js and MongoDB )",
+                "Stock Market Options and Swing trading"
+            ]
+        }
+    },
+    {
+        "file_name": "22110742_RUPALI_RATHOD_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "null",
+            "12th or diploma percentage": "84.5%",
+            "CGPA": "9.25",
+            "skills": [
+                "TNP Chatbot using AI (Python | OpenAI)",
+                "Salary prediction of Software Engineer (Python | Regression models)",
+                "Synergizing Investment Portfolios (Python | HTML | CSS | MYSQL |Yahoo finance API | OpenAI)",
+                "Data Structure and Algorithm by Infosys",
+                "Introduction to Networks course by Cisco Networking (CCNA)",
+                "Oracle Cloud Data Management 2023 Certified Foundations Associate",
+                "Web Development by Internshala",
+                "AWS Academy Cloud Foundations by AWS",
+                "Published a paper 'Synergizing Investment Portfolios: A Technologically Advanced Approach with Integrated Chatbot Capabilities'",
+                "Dedication towards work",
+                "Quick learner",
+                "Ready to acquire new skill and technologies",
+                "Team work"
+            ]
+        }
+    },
+    {
+        "file_name": "22110766_SARTHAK_JOSHI_VIIT.pdf",
+        "response": {
+            "college name": "Sarosh College of Engineering",
+            "10th percentage": "90.50%",
+            "12th or diploma percentage": "94.17%",
+            "CGPA": "null",
+            "skills": [
+                "Sorting Visualizer",
+                "Secure Messenger (Cyber Security)",
+                "Human Sentiment Analysis (Lexicon Based Approach)",
+                "Mario Game Clone",
+                "Java",
+                "C++",
+                "Python",
+                "Blender",
+                "HTML",
+                "CSS",
+                "Javascript",
+                "MySQL",
+                "MongoDB",
+                "R",
+                "UI/UX"
+            ]
+        }
+    },
+    {
+        "file_name": "22110767_SANDEEP_NADVINMANI_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "null",
+            "12th or diploma percentage": "91.8%",
+            "CGPA": "8.77",
+            "skills": [
+                "Data Structures and Algorithms",
+                "Object Oriented Programming",
+                "Database Management System",
+                "Computer Networks",
+                "Operating System",
+                "Machine Learning",
+                "C/C++",
+                "Java",
+                "Python",
+                "HTML/CSS",
+                "MySQL",
+                "MongoDB",
+                "Standard ML Algorithms",
+                "Numpy",
+                "Pandas",
+                "MatPlotLib",
+                "Linux",
+                "VS Code",
+                "GitHub",
+                "DockerHub",
+                "Google Colab",
+                "Google Cloud",
+                "AWS"
+            ]
+        }
+    },
+    {
+        "file_name": "22110768_INDRANIL_THAKARE_VIIT.pdf",
+        "error": "Failed to process LLM response: Response does not contain valid JSON. Raw response: Here are the extracted data in JSON format:\n\n**Vishwakarma Institute of Information Technology**\n\n* \"college name\": \"Vishwakarma Institute of Information Technology\"\n* \"10th percentage\": \"null\"\n* \"12th or diploma percentage\": \"91.8%\"\n* \"CGPA\": \"8.77\"\n* \"skills\": [\n  \"Data Structures and Algorithms\",\n  \"Object Oriented Programming\",\n  \"Database Management System\",\n  \"Computer Networks\",\n  \"Operating System\",\n  \"Machine Learning\",\n  \"C/C++\",\n  \"Java\",\n  \"Python\",\n  \"HTML/CSS\",\n  \"MySQL\",\n  \"MongoDB\",\n  \"Standard ML Algorithms\",\n  \"Numpy\",\n  \"Pandas\",\n  \"MatPlotLib\",\n  \"Linux\",\n  \"VS Code\",\n  \"GitHub\",\n  \"DockerHub\",\n  \"Google Colab\",\n  \"Google Cloud\",\n  \"AWS\"\n]\n\n**No data available for Indranil Thakare**\n\nNote: For Indranil Thakare, there is no explicit data about college name, 10th percentage, 12th percentage, CGPA, or skills."
+    },
+    {
+        "file_name": "22110780_CHINMAY_JOSHI_VIIT.pdf",
+        "error": "Failed to process LLM response: Response does not contain valid JSON. Raw response: Here are the extracted data in JSON format:\n\n**Vishwakarma Institute of Information Technology**\n\n* \"college name\": \"Vishwakarma Institute of Information Technology\"\n* \"10th percentage\": \"null\"\n* \"12th or diploma percentage\": \"91.8%\"\n* \"CGPA\": \"8.76\"\n* \"skills\": [\n  \"C++\",\n  \"Javascript\",\n  \"ReactJS\",\n  \"NodeJS\",\n  \"ExpressJS\",\n  \"MongoDB\",\n  \"Git\",\n  \"Github\",\n  \"AWS\"\n]\n\n**Smt Saraswati Bhale Patil Higher Secondary**\n\n* \"college name\": \"Smt Saraswati Bhale Patil Higher Secondary\"\n* \"10th percentage\": \"87.27%\"\n* \"12th or diploma percentage\": null\n* \"CGPA\": null\n* \"skills\": []\n\n**No data available for Chinmay Joshi**\n\nNote: For Chinmay Joshi, there is no explicit data about college name, 10th percentage, 12th percentage, CGPA, or skills."
+    },
+    {
+        "file_name": "22110784_SAHIL_SONAWANE_VIIT.pdf",
+        "error": "Failed to process LLM response: Response does not contain valid JSON. Raw response: Here are the extracted data in JSON format:\n\n* \"college name\": \"Vishwakarma Institute of Information Technology\"\n* \"10th percentage\": null\n* \"12th or diploma percentage\": \"91.8%\"\n* \"CGPA\": \"8.76\"\n* \"skills\": [\n  \"C#\",\n  \"SQL\",\n  \".NET\",\n  \"Python\",\n  \"Deep Learning\",\n  \"Convolutional Neural Networks (CNNs)\",\n  \"Git\",\n  \"GitHub\"\n]\n\n* \"college name\": \"Smt Saraswati Bhale Patil Higher Secondary\"\n* \"10th percentage\": \"87.27%\"\n* \"12th or diploma percentage\": null\n* \"CGPA\": null\n* \"skills\": []\n\n* \"college name\": \"K.T.H.M. College, Nashik, Maharashtra\"\n* \"10th percentage\": \"94.17%\"\n* \"12th or diploma percentage\": null\n* \"CGPA\": null\n* \"skills\": []\n\n* \"college name\": \"Santaji English Medium School, Vani, Nashik, Maharashtra\"\n* \"10th percentage\": \"87.00 %\"\n* \"12th or diploma percentage\": null\n* \"CGPA\": null\n* \"skills\": []"
+    },
+    {
+        "file_name": "22110795_SARTHAK_RAK_VIIT.pdf",
+        "error": "Failed to process LLM response: Response does not contain valid JSON. Raw response: Here are the extracted details in JSON format:\n\n* \"college name\": \"Sarthak Rak AI enthusiast\"\n* \"10th percentage\": \"87.0%\"\n* \"12th or diploma percentage\": null\n* \"CGPA\": null\n* \"skills\": [\n  \"Java\",\n  \"Python: Numpy, Matplotlib, Pandas, OpenCV\",\n  \"Operations\",\n  \"Critical Thinking\",\n  \"Teambuilding\"\n]\n\nNote that the 10th percentage is extracted as 87.0% since it was mentioned in the resume. The 12th or diploma percentage and CGPA are not present in the resume, so they are written as null."
+    },
+    {
+        "file_name": "22110801_KANIKA_JADHAV_VIIT.pdf",
+        "error": "Failed to process LLM response: Response does not contain valid JSON. Raw response: Here are the extracted details in JSON format:\n\n* \"college name\": \"Vishwakarma Institute of Information Technology, Pune\"\n* \"10th percentage\": null\n* \"12th or diploma percentage\": \"HSC\", \n* \"CGPA\": null\n* \"skills\": [\n  \"C++\",\n  \"DSA\",\n  \"Java\",\n  \"Multisim | Proteus | Keil\",\n  \"Analytical Presentation\",\n  \"Communication\"\n]\n\nNote that the 10th percentage is not present in the resume, so it is written as null. The 12th or diploma percentage is extracted as HSC since it was mentioned in the resume."
+    },
+    {
+        "file_name": "22110808_PARTH_BELSARE_VIIT.pdf",
+        "error": "Failed to process LLM response: Response does not contain valid JSON. Raw response: Here are the extracted details in JSON format:\n\n* \"college name\": \"Vishwakarma Institute of Information Technology, Pune\"\n* \"10th percentage\": null\n* \"12th or diploma percentage\": \"HSC\", \n* \"CGPA\": \"8.87\",\n* \"skills\": [\n  \"Java\",\n  \"C/C++\",\n  \"Python\",\n  \"Git\",\n  \"GitHub\",\n  \"Algorithms and Data Structure\",\n  \"OS\",\n  \"Databases\",\n  \"MySQL\",\n  \"SQL\",\n  \"Amazon Web Services\"\n]\n\nNote that the 10th percentage is not present in the resume, so it is written as null. The 12th or diploma percentage is extracted as HSC since it was mentioned in the resume."
+    },
+    {
+        "file_name": "22110813_SHREYA_LADHE_VIIT.pdf",
+        "error": "Failed to process LLM response: Response does not contain valid JSON. Raw response: Here are the extracted details in JSON format:\n\n* \"college name\": \"Vishwakarma Institute of Information Technology, Pune\"\n* \"10th percentage\": null\n* \"12th or diploma percentage\": \"HSC\", \n* \"CGPA\": \"9.03\",\n* \"skills\": [\n  \"CPP\",\n  \"Java\",\n  \"Python\",\n  \"SQL\",\n  \"HTML\",\n  \"CSS\",\n  \"Operating system\",\n  \"DBMS\",\n  \"AR\",\n  \"Management\",\n  \"Communication\",\n  \"Presentation\",\n  \"Team work\",\n  \"Problem Solving\"\n]\n\nNote that the 10th percentage is not present in the resume, so it is written as null. The 12th or diploma percentage is extracted as HSC since it was mentioned in the resume."
+    },
+    {
+        "file_name": "22110820_APURVA_MUNDALIK_VIIT.pdf",
+        "error": "Failed to process LLM response: Response does not contain valid JSON. Raw response: Here are the extracted details in JSON format:\n\n* \"college name\": \"Vishwakarma Institute of Information Technology, Pune\"\n* \"10th percentage\": null\n* \"12th or diploma percentage\": \"83.85%\",\n* \"CGPA\": \"8.87\",\n* \"skills\": [\n  \"Programming Languages \u2013 C, C++, Java, python\",\n  \"Web Technologies \u2013 PHP, MySQL, HTML, CSS, JavaScript and related frameworks\",\n  \"Microsoft office, Figma , Canva , VSLC (Video Editing).\",\n  \"Strong organisational and time management skills\",\n  \"Strong communication and interpersonal skills fluent in both spoken and written English.\",\n  \"Academic Projects Login System A login page of the website that takes the credentials from the user and stores it in a database using python and SQL. ATM Machine Atm machine using CPP this has all the options that a real ATM machine have like withdrawal, check balance, reset PIN\",\n  \"PROJECT HUB Created a website that stores databases and implements QR code scanning ,that is it converts the data into QR code giving easy access to the data using JavaScript , HTML ,CSS.\",\n  \"CANCER PREDICTION Cancer prediction using machine learning in Python, this predicts the average number of people who can get cancer in future form the dataset of 500-600 entries, used ML algorithms like random forest, regression, decision tree and achieve an accuracy of 95.6%\",\n  \"Achievements and courses\",\n  \"Extra-curricular Activities\"\n]\n\nNote that I extracted the skills from the resume text, but some of them are not in a format that can be easily included in a JSON array. If you want to include all the skills, even if they are not in a single line, please let me know and I'll try to reformat them for you."
+    },
+    {
+        "file_name": "22110823_VISHWAJEET_DESAI_VIIT.pdf",
+        "error": "Failed to process LLM response: Response does not contain valid JSON. Raw response: Here are the extracted details in JSON format:\n\n* \"college name\": \"Vishwakarma Institute of Information Technology, Pune\"\n* \"10th percentage\": null\n* \"12th or diploma percentage\": \"90%\",\n* \"CGPA\": \"9.31\",\n* \"skills\": [\n  \"Languages: Experienced: Python, Java Intermediate: Dart\",\n  \"Frameworks: Deep Learning & Machine Learning: TensorFlow, Keras\",\n  \"Frontend: Flutter\",\n  \"Developer Tools: Google Colab, VS Code, Jupyter Notebooks\",\n  \"Fundamentals: Data Structures, Algorithms, Operating systems\",\n  \"Projects Section Labelling of Medical Dataset\",\n  \"NLP project for medical data section labeling\",\n  \"Using tokenization for efficient text processing\",\n  \"Using TensorFlow and scikit-learn for accurate NLP solutions in medical document analysis\",\n  \"Achieved an impressive accuracy rate of almost 83%\",\n  \"Car Price Prediction | Python, sci-kit learn, pandas, Numpy, Matplotlib\",\n  \"Created ML model for car price prediction\",\n  \"Implemented data preprocessing techniques\",\n  \"Used Python libraries for data manipulation and ML algorithms\",\n  \"CI-CD For Ecommerce Application | Git , Github Actions\",\n  \"Created CI/CD pipeline with GitHub Actions for E-Commerce application\",\n  \"Used GitHub Actions for automated testing and deployment\",\n  \"Deployed app to AWS bucket\",\n  \"Certifications\",\n  \"Oracle Cloud Infrastructure 2023 Certified Foundations\",\n  \"Data Science Foundations: Data Mining in Python\" by Barton Poulson,\n  \"Certificate Course in AR VR Game Development Using Unity\"\n]\n\nNote that I extracted the skills from the resume text, but some of them are not in a format that can be easily included in a JSON array. If you want to include all the skills, even if they are not in a single line, please let me know and I'll try to reformat them for you.\n\nAlso, I did not extract the 10th percentage as it was not present in the resume text. If you want to extract the 12th percentage, I can do that instead. Let me know!"
+    },
+    {
+        "file_name": "22110829_SHAUNAK_THAKUR_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": null,
+            "12th or diploma percentage": "95.8%",
+            "CGPA": "-9.15",
+            "skills": [
+                "Creating a Document sorting Software for companies to scan and detect potential fraud",
+                "Developing a Model using Machine Learning, using our own dataset, and Testing the model using real-world data.",
+                "Automated the entire Process of Document collection, verification, and segregation using various approaches.",
+                "Embedding the model in a web app using Django/Flask framework in Python to give it a beautiful and user-friendly GUI",
+                "Printing the menu card and using labels in the code performed various operations for different prices",
+                "Developed an Assembly Language Code for a simple Billing System",
+                "Using dataset and Hex files of Indian Map Created a dynamic dashboard for the Crime rate for each state and created a visualization",
+                "Machine Learning -EDUVERSITY Predicted the ongoing world cup winner using Machine Learning Algorithms",
+                "CCNA Module 1 Machine Learning -EDUVERSITY Machine Learning A-Z - Udemy Jupyter Notebook August 2022"
+            ]
+        }
+    },
+    {
+        "file_name": "22110833_Devesh_Zinzuwadia_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": null,
+            "12th percentage": null,
+            "CGPA": "9",
+            "skills": [
+                "Data Analyst Internship IBM",
+                "Hotel Reservation System: A GUI Application using PHP and MySQL",
+                "AyurmedVerify(Python, TensorFlow, Keras, CNN)",
+                "Research paper published on AyurmedVerify project",
+                "Among top 50 in eyantra robotics competition hosted by IIT Bombay",
+                "Won the internal hackathon in college of Smart India Hackathon",
+                "Runner Up in Stats Say Competition UI design organized by VIIT Pune",
+                "Coursework: Data Structures and Algorithms, OOPS, Operating System, Database Management System",
+                "Programming Languages: C++, Java, Python",
+                "Technologies: HTML, CSS, Javascript, PHP",
+                "Database: MySQL",
+                "Data Analysis: Pandas, Numpy, Matplotlib, Seaborn, Tableau"
+            ]
+        }
+    },
+    {
+        "file_name": "22110835_ANIKET_DHOKE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "92.60%",
+            "12th or diploma percentage": null,
+            "CGPA": "9.17",
+            "skills": [
+                "Designing & Building A Prototype For Measuring Carbon Emissions In The Surroundings",
+                "Smart IoT-Based Cloud Integrated Dustbin",
+                "Handwritten Digits Recognizer Canvas",
+                "Heatflow calculation using Arduino",
+                "Car Management System GUI based Car Inventory System using Database Management System",
+                "OOPs in C++",
+                "Java & AI Programming Tools",
+                "Javascript & Jquery",
+                "SQL Programming",
+                "Python & Flask Framework",
+                "CCNAv7: Introduction to Networks",
+                "Introduction to Cybersecurity",
+                "Introduction To Packet Tracer",
+                "Microsoft x TechSaksham SAP"
+            ]
+        }
+    },
+    {
+        "file_name": "22110853_KUSHAL_MALU_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "90.4%",
+            "12th or diploma percentage": "80.17%",
+            "CGPA": "9.1",
+            "skills": [
+                "C++",
+                "Java",
+                "Python",
+                "SQL",
+                "JavaScript",
+                "HTML",
+                "MySQL",
+                "MongoDB",
+                "Operating System",
+                "DBMS",
+                "Computer Networking",
+                "OOPs",
+                "Data Structures & Algorithm",
+                "CSS",
+                "Tailwind CSS",
+                "React.js",
+                "Node.js",
+                "Express.js",
+                "Automation Anywhere",
+                "Power BI",
+                "Problem Solving",
+                "Communication skills"
+            ]
+        }
+    },
+    {
+        "file_name": "22110870_ROHAN_SONNE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "90.4%",
+            "12th or diploma percentage": "95.00%",
+            "CGPA": "9.29",
+            "skills": [
+                "Java (DSA)",
+                "Python (ML basics)",
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "NodeJS",
+                "MySQL",
+                "MongoDB",
+                "Object Oriented Programming (OOP\u2019s)",
+                "Operating System(OS)"
+            ]
+        }
+    },
+    {
+        "file_name": "22220110_KAUSHAL_KHACHANE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "null",
+            "12th or diploma percentage": "93.43%",
+            "CGPA": "9.41",
+            "skills": [
+                "C++",
+                "Java",
+                "Javascript",
+                "Python",
+                "Node JS",
+                "React JS",
+                "MYSQL",
+                "MongoDB",
+                "Git & Github",
+                "Jenkins",
+                "Express",
+                "Hono",
+                "Cloudinary",
+                "CloudFlare Workers",
+                "Prisma",
+                "AppWrite",
+                "Firebase",
+                "AWS"
+            ]
+        }
+    },
+    {
+        "file_name": "22220122_SARTHAK_BHAPKAR_VIIT.pdf",
+        "response": {
+            "college_name": "Vishwakarma Institute of Information Technology",
+            "10th_percentage": null,
+            "12th_or_diploma_percentage": "92.73%",
+            "CGPA": "8.93",
+            "skills": [
+                "C/C++",
+                "Java",
+                "Python",
+                "JavaScript",
+                "React.JS",
+                "Node.JS",
+                "Express.JS",
+                "SQL",
+                "MySQL",
+                "MongoDB",
+                "Oracle",
+                "Spring Boot",
+                "Servlet",
+                "JSP",
+                "Django",
+                "GitHub",
+                "Git",
+                "VSCode",
+                "Google Colab",
+                "Eclipse"
+            ]
+        }
+    },
+    {
+        "file_name": "22220123_SAHIL_MANDAVKAR_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Technology",
+            "10th percentage": "91%",
+            "12th or diploma percentage": null,
+            "CGPA": "9.5",
+            "skills": [
+                "C++",
+                "Python",
+                "SQL",
+                "Mojo",
+                "Gen AI/LLMs",
+                "DSA",
+                "ML/DL",
+                "NLP",
+                "Data Mining",
+                "DevOps"
+            ]
+        }
+    },
+    {
+        "file_name": "22220131_ARYAN_LAD_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": null,
+            "12th or diploma percentage": "93.49%",
+            "CGPA": null,
+            "skills": [
+                "C++",
+                "Java",
+                "Python",
+                "JavaScript",
+                "Convolutional Neural Network",
+                "NasNet",
+                "HTML5",
+                "CSS",
+                "Bootstrap",
+                "Express.js",
+                "Node.js",
+                "MongoDb",
+                "Arduino IDE",
+                "Unity 3D",
+                "Blynk",
+                "Vuforia Engine",
+                "Data Structures",
+                "Artificial Intelligence",
+                "Web Development",
+                "Machine Learning",
+                "Deep Learning",
+                "Android Development",
+                "Operating System",
+                "Database Management",
+                "Computer Network",
+                "Internet of Things",
+                "Cloud Computing"
+            ]
+        }
+    },
+    {
+        "file_name": "22220132_ADINATH_SHELKE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Polytechnic",
+            "10th percentage": null,
+            "12th or diploma percentage": "93.03",
+            "CGPA": "9.41",
+            "skills": [
+                "JavaScript",
+                "Typescript",
+                "C++",
+                "C",
+                "HTML/CSS",
+                "SQL",
+                "React.js",
+                "Next.js",
+                "Express.js",
+                "Node.js",
+                "MongoDB"
+            ]
+        }
+    },
+    {
+        "file_name": "22220136_ANKUSH_INGALE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": null,
+            "12th or diploma percentage": "91.20/100%",
+            "CGPA": "9.21/10",
+            "skills": [
+                "Java",
+                "Python",
+                "C/C++",
+                "Frontend: HTML, CSS, Bootstrap",
+                "Backend Frameworks: Servlet, JSP, Django",
+                "Clouds & Databases: AWS, Oracle, MySQL, MongoDB",
+                "Machine Learning",
+                "NLP",
+                "Web Development"
+            ]
+        }
+    },
+    {
+        "file_name": "22220142_YASH_ANBHORE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": null,
+            "12th or diploma percentage": "88.91%",
+            "CGPA": "9.01",
+            "skills": [
+                "Java",
+                "Python",
+                "C/C++",
+                "Frontend: HTML, CSS, Bootstrap",
+                "Backend Frameworks: Servlet, JSP, Django",
+                "Clouds & Databases: AWS, Oracle, MySQL, MongoDB",
+                "Machine Learning",
+                "NLP",
+                "Web Development"
+            ]
+        }
+    },
+    {
+        "file_name": "22220145_SIDDHI_DESHMANE_VIIT.pdf",
+        "response": {
+            "college name": "Government Polytechnic, Pune",
+            "10th percentage": "90.60",
+            "12th or diploma percentage": "91.47",
+            "CGPA": null,
+            "skills": [
+                "C",
+                "C++",
+                "Java",
+                "Python",
+                "Computer networks",
+                "Database management"
+            ]
+        }
+    },
+    {
+        "file_name": "22220169_SHRUTI_KAMBLE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology, Pune",
+            "10th percentage": null,
+            "12th or diploma percentage": null,
+            "CGPA": "9.2",
+            "skills": [
+                "C++",
+                "Java",
+                "Python",
+                "HTML/CSS",
+                "JavaScript",
+                "SQL",
+                "MySQL"
+            ]
+        }
+    },
+    {
+        "file_name": "22220173_MINAKSHI_HARAL_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology, Pune",
+            "10th percentage": null,
+            "12th or diploma percentage": "90.93%",
+            "CGPA": "9.27",
+            "skills": [
+                "Python",
+                "C/C++",
+                "Java",
+                "HTML",
+                "CSS",
+                "Canva",
+                "Auto-cad",
+                "ML",
+                "Flask",
+                "TensorFlow",
+                "PyTorch",
+                "Scikit-Learn",
+                "CNNs",
+                "RNNs",
+                "YOLO",
+                "Web Development",
+                "Database: SQL, MySql, Oracle"
+            ]
+        }
+    },
+    {
+        "file_name": "22220191_ADITYA_VADGAVE_VIIT.pdf",
+        "response": {
+            "college name": "NIT Trichy",
+            "10th percentage": "85%",
+            "12th or diploma percentage": null,
+            "CGPA": "8.5",
+            "skills": [
+                "Python",
+                "Java",
+                "C++",
+                "Data Structures",
+                "Algorithms",
+                "Machine Learning",
+                "Deep Learning"
+            ]
+        }
+    },
+    {
+        "file_name": "22220203_MRUDULA_WAKODKAR_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": "93.65%",
+            "12th or diploma percentage": null,
+            "CGPA": "9.38",
+            "skills": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Flask",
+                "MySQL",
+                "Python",
+                "Pandas",
+                "Numpy",
+                "Matplotlib",
+                "Scikit-learn",
+                "TensorFlow",
+                "Git",
+                "Github",
+                "Probability and Statistics",
+                "Hypothesis testing",
+                "Regression analysis",
+                "Probability distributions",
+                "Shell Scripting",
+                "Computer Vision",
+                "Tableau",
+                "Java",
+                "C++"
+            ]
+        }
+    },
+    {
+        "file_name": "22220212_SHRUTI_GHODAKE_VIIT.pdf",
+        "response": {
+            "college name": "Sumago Infotech Pvt. Ltd., Pune",
+            "10th percentage": null,
+            "12th or diploma percentage": "91.67%",
+            "CGPA": null,
+            "skills": [
+                "Python",
+                "Data Science",
+                "Machine Learning",
+                "SQL",
+                "Web Technologies- HTML, CSS, Bootstrap, JavaScript",
+                "Flask",
+                "Java",
+                "Data Structures"
+            ]
+        }
+    },
+    {
+        "file_name": "22220228_MADHAVI_SONAWANE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology",
+            "10th percentage": null,
+            "12th or diploma percentage": null,
+            "CGPA": "9.61",
+            "skills": [
+                "C",
+                "C++",
+                "Java",
+                "Python",
+                "HTML/CSS",
+                "JavaScript",
+                "SQL(MySQL)",
+                "MongoDB(Basics)",
+                "PHP",
+                "Git",
+                "GitHub",
+                "ReactJS",
+                "Flask",
+                "Firebase",
+                "AWS",
+                "Postman",
+                "VS Code",
+                "Eclipse",
+                "Pycharm",
+                "Intellij",
+                "Android Studio",
+                "Figma",
+                "Canva",
+                "JIRA",
+                "LPF Scholarship holder",
+                "Cisco Certified Network Associate (CCNA)",
+                "Data Science and Machine Learning (DSML)"
+            ]
+        }
+    },
+    {
+        "file_name": "22220243_ISHA_PATIL_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute Of Information Technology",
+            "10th percentage": null,
+            "12th or diploma percentage": null,
+            "CGPA": "9.37/10 (expected)",
+            "skills": [
+                "Java",
+                "Python",
+                "Android Development",
+                "Cloud Computing",
+                "POWER BI",
+                "MySQL",
+                "HTML",
+                "CSS",
+                "BOOTSTRAP",
+                "Data Analytics Concepts",
+                "Object Oriented Programming",
+                "Data Structures & Algorithms",
+                "Operating System",
+                "Networking"
+            ]
+        }
+    },
+    {
+        "file_name": "22220252_JANAI_KASLE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute Of Information Technology",
+            "10th percentage": null,
+            "12th or diploma percentage": "93.26%",
+            "CGPA": "9.39",
+            "skills": [
+                "Java",
+                "Python",
+                "Android Development",
+                "Cloud Computing",
+                "POWER BI",
+                "MySQL",
+                "HTML",
+                "CSS",
+                "BOOTSTRAP",
+                "Data Analytics Concepts",
+                "Object Oriented Programming",
+                "Data Structures & Algorithms",
+                "Operating System",
+                "Networking"
+            ]
+        }
+    },
+    {
+        "file_name": "22220262_PUSHKAR_INGALE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute Of Information Technology",
+            "10th percentage": null,
+            "12th or diploma percentage": "90.86%",
+            "CGPA": "9.45",
+            "skills": [
+                "Python",
+                "C/C++",
+                "Java",
+                "SQL",
+                "JavaScript",
+                "TensorFlow",
+                "Keras",
+                "PyTorch",
+                "Scikit-Learn",
+                "CNNs",
+                "RNNs",
+                "Transformers",
+                "YOLO",
+                "NumPy",
+                "Pandas",
+                "OpenCV",
+                "Jupyter",
+                "Docker",
+                "MLflow",
+                "PowerBI",
+                "Tableau",
+                "NLTK",
+                "SpaCy",
+                "Hugging Face Transformers",
+                "AWS",
+                "Google Cloud",
+                "Azure",
+                "Git",
+                "GitHub",
+                "Sql",
+                "MongoDB"
+            ]
+        }
+    },
+    {
+        "file_name": "22220268_ADITI_HIMPALNERKAR_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute Of Information Technology",
+            "10th percentage": null,
+            "12th or diploma percentage": "90.86%",
+            "CGPA": "9.13",
+            "skills": [
+                "Python",
+                "C++",
+                "Java",
+                "HTML/CSS",
+                "SQL",
+                "Power BI",
+                "Git/GitHub",
+                "Wordpress",
+                "Figma",
+                "Flask",
+                "CNN",
+                "ML",
+                "Android",
+                "Java"
+            ]
+        }
+    },
+    {
+        "file_name": "22220275_SAVI_DAHEGAONKAR_VIIT.pdf",
+        "error": "Failed to parse JSON from response: Extra data: line 8 column 1 (char 154). Extracted JSON: {\n  \"college name\": \"St. Lawrence High School\",\n  \"10th percentage\": \"92.60\",\n  \"12th or diploma percentage\": null,\n  \"CGPA\": null,\n  \"skills\": [\"SSC\"]\n}\n```\n\nFor AI:\n```\n{\n  \"college name\": \"Vishwakarma Institute Of Information Technology\",\n  \"10th percentage\": null,\n  \"12th or diploma percentage\": \"90.86%\",\n  \"CGPA\": \"9.13\",\n  \"skills\": [\n    \"Python\",\n    \"C++\",\n    \"Java\",\n    \"HTML/CSS\",\n    \"SQL\",\n    \"Power BI\",\n    \"Git/GitHub\",\n    \"Wordpress\",\n    \"Figma\"\n  ]\n}"
+    },
+    {
+        "file_name": "22220286_RAMAKANT_TATI_VIIT.pdf",
+        "error": "Failed to parse JSON from response: Extra data: line 8 column 1 (char 163). Extracted JSON: {\n  \"college name\": \"VIIT \u2013 Pune, India\",\n  \"10th percentage\": null,\n  \"12th or diploma percentage\": null,\n  \"CGPA\": null,\n  \"skills\": [\"Java\", \"Python\", \"C++\"]\n}\n```\n\nFor RAMAKANT TATI:\n```\n{\n  \"college name\": \"Government Polytechnic \u2013 Solapur, India\",\n  \"10th percentage\": null,\n  \"12th or diploma percentage\": null,\n  \"CGPA\": null,\n  \"skills\": [\n    \"Java\",\n    \"Python\",\n    \"C++\",\n    \"HTML\",\n    \"CSS\",\n    \"MySQL\",\n    \"VsCode\",\n    \"Eclipse\",\n    \"React\",\n    \"Android Development\",\n    \"Bootstrap\",\n    \"Jenkins\",\n    \"Docker\"\n  ]\n}"
+    },
+    {
+        "file_name": "22220287_MUSKAN_SHAIKH_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology Khurd",
+            "10th percentage": null,
+            "12th or diploma percentage": "93.03",
+            "CGPA": "9.08",
+            "skills": [
+                "C++",
+                "Java",
+                "Python",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "PHP",
+                "React.js",
+                "SQL",
+                "MongoDB",
+                "OOP",
+                "Spring Boot",
+                "AWS",
+                "Shell Scripting",
+                "Docker",
+                "Jenkins",
+                "Terraform"
+            ]
+        }
+    },
+    {
+        "file_name": "22220298_VALLABH_JOSHI_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology Pune",
+            "10th percentage": null,
+            "12th or diploma percentage": "92.11%",
+            "CGPA": "9.25",
+            "skills": [
+                "Python",
+                "SQL",
+                "Pandas",
+                "Numpy",
+                "Matplotlib",
+                "Seaborn",
+                "Scikitlearn",
+                "VS Code",
+                "Jupyter Notebook",
+                "Power BI",
+                "Excel",
+                "MySQL",
+                "PostgreSQL"
+            ]
+        }
+    },
+    {
+        "file_name": "22220299_VASUDEV_RAUT_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology Pune",
+            "10th percentage": null,
+            "12th or diploma percentage": "92.11%",
+            "CGPA": "9.42",
+            "skills": [
+                "C",
+                "C++",
+                "Python",
+                "Java",
+                "PHP",
+                "SQL",
+                "Android Development",
+                "Mysql",
+                "Firebase",
+                "Github",
+                "Android Studio",
+                "OOP",
+                "DBMS",
+                "Operating System"
+            ]
+        }
+    },
+    {
+        "file_name": "22220305_PIYUSHA_DEORE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology Pune",
+            "12th or diploma percentage": "92.11%",
+            "CGPA": "8.99",
+            "skills": [
+                "Python",
+                "Java",
+                "C",
+                "C++",
+                "Dart",
+                "JavaScript",
+                "SQL",
+                "XML",
+                "PHP",
+                "Android Development"
+            ]
+        }
+    },
+    {
+        "file_name": "22220310_GAURAV_LOKHANDE_VIIT.pdf",
+        "response": {
+            "college name": "Vishwakarma Institute of Information Technology Pune",
+            "12th or diploma percentage": "92.11%",
+            "CGPA": "9.11",
+            "skills": [
+                "Python",
+                "Java",
+                "C",
+                "C++",
+                "Dart",
+                "JavaScript",
+                "SQL",
+                "XML",
+                "PHP",
+                "Android Development"
+            ]
+        }
+    }
+]
