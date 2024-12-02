@@ -54,6 +54,8 @@
 </template>
 
 <script>
+import axios from 'axios'; // Import axios for making API calls
+
 export default {
   data() {
     return {
@@ -104,108 +106,124 @@ export default {
     handleFileUpload(event) {
       this.resumeFile = event.target.files[0];
     },
-    submitResume() {
+    async submitResume() {
       if (!this.resumeFile) {
         alert("Please select a file.");
         return;
       }
 
       let formData = new FormData();
-      formData.append("resume", this.resumeFile);
+      formData.append("file", this.resumeFile); // Append file to FormData
 
-      alert("Resume uploaded successfully!");
-      this.isUploadVisible = false; // Hide form after submission
+      try {
+        // Replace this URL with your backend API endpoint for handling resume uploads
+        const response = await axios.post("http://127.0.0.1:8000/generate-response", formData, {
+          headers: { "Content-Type": "multipart/form-data" },
+        });
+
+        console.log(response.data); // Log the response from the backend
+        alert("Resume uploaded successfully!");
+        this.isUploadVisible = false; // Hide the upload form after successful submission
+      } catch (error) {
+        console.error("Error uploading file:", error.response ? error.response.data : error);
+        alert("Error uploading resume!");
+      }
     },
   },
 };
 </script>
 
+<style scoped>
+.header {
+  background-color: #3f51b5;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.header-title {
+  font-size: 20px;
+}
 
-  
-  <style scoped>
-  .header {
-    background-color: #3f51b5;
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header-title {
-    font-size: 20px;
-  }
-  .header-right {
-    position: relative;
-    display: inline-block;
-  }
-  .dropdown {
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    right: 0;
-  }
-  .dropdown a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .dropdown a:hover {
-    background-color: #f1f1f1;
-  }
-  .profile-btn {
-    cursor: pointer;
-    background-color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 18px;
-  }
-  
-  .content {
-    display: flex;
-    height: 100vh;
-  }
-  .sidebar {
-    width: 200px;
-    background-color: #f4f4f4;
-    padding: 20px;
-  }
-  .sidebar a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-    cursor: pointer;
-  }
-  .sidebar a:hover {
-    background-color: #ddd;
-  }
-  
-  .main-content {
-    flex-grow: 1;
-    padding: 20px;
-    background-color: white;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #3f51b5;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #2c3e99;
-  }
-  </style>
-  
+.header-right {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+.profile-btn {
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.content {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.sidebar a:hover {
+  background-color: #ddd;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: white;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2c3e99;
+}
+</style>
