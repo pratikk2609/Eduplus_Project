@@ -1,5 +1,6 @@
 import mysql.connector
 from fastapi import FastAPI, HTTPException, UploadFile, File
+from pydantic import BaseModel
 import uvicorn
 import os
 import fitz
@@ -126,6 +127,11 @@ def insert_skills_into_hr_db(skills: list):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Unexpected error: {e}")
 
+# Pydantic model to validate incoming request data for job descriptions
+class JobDescriptionRequest(BaseModel):
+    job_title: str  # Add job_title field
+    job_description: str
+
 @app.post("/generate-response")
 async def generate_response(file: UploadFile = File(...)):
     try:
@@ -148,8 +154,10 @@ async def generate_response(file: UploadFile = File(...)):
         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
 @app.post("/hr-skills")
-async def extract_hr_skills(job_description: str):
+async def extract_hr_skills(request: JobDescriptionRequest):
     try:
+        job_title = request.job_title  # Now you can access the job title
+        job_description = request.job_description  # Extract job description from the request
         temp_memory = ConversationBufferWindowMemory(k=5)
         conversation = ConversationChain(llm=llm, memory=temp_memory)
 
@@ -163,9 +171,12 @@ async def extract_hr_skills(job_description: str):
         # Insert skills into hr_db table
         insert_skills_into_hr_db(skills)
 
+        # Optionally, you can also insert the job_title into a database if needed
+        # For example, insert_job_title(job_title)
+
         return {"skills": skills}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
 if __name__ == "__main__":
-    uvicorn.run(app, host='127.0.0.1', port=8000, reload=True)
+    uvicorn.run(app, host="127.0.0.1", port=8000)
