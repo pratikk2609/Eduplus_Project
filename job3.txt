@@ -1,0 +1,13 @@
+We are looking for a DevOps Engineer to streamline our deployment processes and improve system reliability. The ideal candidate should have a deep understanding of CI/CD pipelines and infrastructure automation.
+
+Key Responsibilities:
+- Develop and maintain CI/CD pipelines.
+- Automate infrastructure provisioning and monitoring.
+- Ensure system reliability and scalability through best practices.
+- Collaborate with development teams to improve deployment workflows.
+
+Required Skills:
+- Strong knowledge of CI/CD tools like Jenkins, GitLab, or GitHub Actions.
+- Experience with infrastructure-as-code tools like Terraform or Ansible.
+- Proficiency in scripting languages like Python or Bash.
+- Expertise in cloud platforms such as AWS, GCP, or Azure.

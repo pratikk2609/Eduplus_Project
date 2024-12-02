@@ -1,0 +1,13 @@
+We are seeking a Data Scientist to extract actionable insights from large datasets and contribute to the development of machine learning models. The ideal candidate should be curious, detail-oriented, and proficient in statistical analysis.
+
+Key Responsibilities:
+- Analyze large datasets to identify trends and patterns.
+- Build and optimize machine learning models for business use cases.
+- Collaborate with stakeholders to define analytics needs and deliver insights.
+- Communicate results through compelling visualizations and reports.
+
+Required Skills:
+- Proficiency in Python, R, or SQL.
+- Strong understanding of statistics and probability.
+- Experience with libraries like TensorFlow, PyTorch, or Scikit-learn.
+- Familiarity with big data tools such as Hadoop or Spark.

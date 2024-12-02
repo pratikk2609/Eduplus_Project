@@ -1,0 +1,13 @@
+We are hiring a Machine Learning Engineer to design and implement state-of-the-art machine learning models for real-world applications. The ideal candidate should have a strong background in mathematics and programming.
+
+Key Responsibilities:
+- Develop, train, and deploy machine learning models.
+- Preprocess and clean data to improve model accuracy.
+- Optimize algorithms for performance and scalability.
+- Stay updated on the latest advancements in machine learning.
+
+Required Skills:
+- Proficiency in Python and libraries like TensorFlow, PyTorch, or Scikit-learn.
+- Strong understanding of linear algebra, calculus, and probability.
+- Experience with distributed computing frameworks like Spark or Dask.
+- Familiarity with MLOps practices for model deployment and monitoring.
