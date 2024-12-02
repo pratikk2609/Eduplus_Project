@@ -117,7 +117,7 @@ export default {
 
       try {
         // Replace this URL with your backend API endpoint for handling resume uploads
-        const response = await axios.post("http://127.0.0.1:8000/generate-response", formData, {
+        const response = await axios.post("http://127.0.0.1:8001/generate-response", formData, {
           headers: { "Content-Type": "multipart/form-data" },
         });
 

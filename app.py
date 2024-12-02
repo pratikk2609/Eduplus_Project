@@ -17,6 +17,7 @@ import re
 import fitz
 import uvicorn
 from fastapi import Depends
+from sqlalchemy import text
 
 
 # FastAPI app setup
@@ -34,7 +35,6 @@ app.add_middleware(
 # Load environment variables
 load_dotenv()
 
-# Database configuration (MySQL)
 db_host = os.getenv('DB_HOST', 'localhost')
 db_user = os.getenv('DB_USER', 'root')
 db_password = os.getenv('DB_PASSWORD', 'Gauri@2004')
@@ -93,6 +93,7 @@ class ResumeSchema(BaseModel):
     class Config:
         orm_mode = True
 
+
 # LLM Initialization
 llm = Ollama(
     model="llama3.2",
@@ -116,6 +117,7 @@ def extract_pdf_text(pdf_file: UploadFile) -> str:
 # Function to clean and deduplicate the LLM output
 def clean_llm_response(raw_response: str) -> dict:
     try:
+        # Use regex to locate the JSON portion in the response
         json_match = re.search(r"\{.*\}", raw_response, re.DOTALL)
         if json_match:
             json_text = json_match.group()
@@ -123,7 +125,7 @@ def clean_llm_response(raw_response: str) -> dict:
         else:
             raise ValueError("No valid JSON found in the LLM response.")
     except json.JSONDecodeError as e:
-        raise ValueError(f"Failed to parse JSON: {e}. Extracted response: {raw_response}")
+        raise ValueError(f"Failed to parse JSON: {e}. Extracted response: {json_text if 'json_text' in locals() else raw_response}")
 
 # Function to insert data into the resume_data table in MySQL
 def insert_into_db(data: dict):
@@ -172,6 +174,10 @@ def insert_skills_into_hr_db(skills: list):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Unexpected error: {e}")
 
+# Pydantic model to validate incoming request data for job descriptions
+class JobDescriptionRequest(BaseModel):
+    job_title: str  # Add job_title field
+    job_description: str
 
 @app.post("/generate-response")
 async def generate_response(file: UploadFile = File(...)):
@@ -195,8 +201,10 @@ async def generate_response(file: UploadFile = File(...)):
         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
 @app.post("/hr-skills")
-async def extract_hr_skills(job_description: str):
+async def extract_hr_skills(request: JobDescriptionRequest):
     try:
+        job_title = request.job_title  # Now you can access the job title
+        job_description = request.job_description  # Extract job description from the request
         temp_memory = ConversationBufferWindowMemory(k=5)
         conversation = ConversationChain(llm=llm, memory=temp_memory)
 
@@ -210,12 +218,13 @@ async def extract_hr_skills(job_description: str):
         # Insert skills into hr_db table
         insert_skills_into_hr_db(skills)
 
+        # Optionally, you can also insert the job_title into a database if needed
+        # For example, insert_job_title(job_title)
+
         return {"skills": skills}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
-
-from sqlalchemy import text
 
 @app.get("/fetch-resumes")
 def fetch_resumes(
@@ -276,6 +285,5 @@ def fetch_resumes(
         # Handle any errors and return a 500 response
         raise HTTPException(status_code=500, detail=f"Error: {str(e)}")
 
-
 if __name__ == "__main__":
-    uvicorn.run(app, host='127.0.0.1', port=8000, reload=True)
+    uvicorn.run(app, host="127.0.0.1", port=8000)
