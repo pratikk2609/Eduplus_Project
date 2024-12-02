@@ -14,48 +14,106 @@
     <div class="content">
       <div class="sidebar">
         <a @click="showAddJobForm">Add Job Description</a>
-        <a @click="shortlistCandidates">Shortlist Candidates</a>
+        <a @click="toggleShortlistedSection">Shortlist Candidates</a>
         <a @click="fetchRankingTable">Ranking Table</a>
       </div>
 
       <div class="main-content">
         <!-- Add Job Description Form -->
-        <h2>Add Job Description</h2>
-        <form @submit.prevent="submitJobDescription">
-          <div class="form-group">
-            <label for="jobTitle">Job Title:</label>
-            <input
-              type="text"
-              id="jobTitle"
-              v-model="jobTitle"
-              placeholder="Enter job title"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="jobDescription">Job Description:</label>
-            <textarea
-              id="jobDescription"
-              v-model="jobDescription"
-              placeholder="Enter job description"
-              required
-            ></textarea>
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-
-        <!-- Display shortlisted skills -->
-        <div v-if="skills.length > 0" class="skills-section">
-          <h3>Shortlisted Skills:</h3>
-          <ul>
-            <li v-for="(skill, index) in skills" :key="index">{{ skill }}</li>
-          </ul>
+        <div v-if="showAddJob">
+          <h2>Add Job Description</h2>
+          <form @submit.prevent="submitJobDescription">
+            <div class="form-group">
+              <label for="jobTitle">Job Title:</label>
+              <input
+                type="text"
+                id="jobTitle"
+                v-model="jobTitle"
+                placeholder="Enter job title"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="jobDescription">Job Description:</label>
+              <textarea
+                id="jobDescription"
+                v-model="jobDescription"
+                placeholder="Enter job description"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
         </div>
 
-        <!-- Display shortlisted candidates -->
-        <div v-if="candidates.length > 0" class="shortlisted-candidates-section">
-          <h3>Shortlisted Candidates</h3>
-          <table>
+        <!-- Shortlisted Candidates Section -->
+        <div v-if="showShortlistedSection" class="shortlisted-candidates-section">
+          <h2>Shortlisted Candidates</h2>
+
+          <!-- Filter Selection -->
+          <div class="filters">
+            <h3>Filters:</h3>
+            <label>
+              <input
+                type="checkbox"
+                value="tenGrade"
+                v-model="selectedFilters"
+              />
+              10th Grade Percentage
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                value="twelveGrade"
+                v-model="selectedFilters"
+              />
+              12th Grade Percentage
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                value="cgpa"
+                v-model="selectedFilters"
+              />
+              CGPA
+            </label>
+
+            <!-- Input Fields for Selected Filters -->
+            <div v-if="selectedFilters.includes('tenGrade')">
+              <label for="tenGradeInput">10th Grade Percentage:</label>
+              <input
+                type="text"
+                id="tenGradeInput"
+                v-model="filterDetails.tenGrade"
+                placeholder="Enter range (e.g., 85-90)"
+              />
+            </div>
+
+            <div v-if="selectedFilters.includes('twelveGrade')">
+              <label for="twelveGradeInput">12th Grade Percentage:</label>
+              <input
+                type="text"
+                id="twelveGradeInput"
+                v-model="filterDetails.twelveGrade"
+                placeholder="Enter range (e.g., 80-85)"
+              />
+            </div>
+
+            <div v-if="selectedFilters.includes('cgpa')">
+              <label for="cgpaInput">CGPA:</label>
+              <input
+                type="text"
+                id="cgpaInput"
+                v-model="filterDetails.cgpa"
+                placeholder="Enter CGPA (e.g., 8.5-9.0)"
+              />
+            </div>
+
+            <button @click="fetchFilteredResumes">Fetch Resumes</button>
+          </div>
+
+          <!-- Display Candidates -->
+          <table v-if="filteredCandidates.length > 0">
             <thead>
               <tr>
                 <th>Name</th>
@@ -66,7 +124,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr v-for="(candidate, index) in candidates" :key="index">
+              <tr v-for="(candidate, index) in filteredCandidates" :key="index">
                 <td>{{ candidate.name }}</td>
                 <td>{{ candidate.tenGrade }}</td>
                 <td>{{ candidate.twelveGrade }}</td>
@@ -87,11 +145,24 @@ import axios from "axios";
 export default {
   data() {
     return {
-      jobTitle: "", // Store the job title
-      jobDescription: "", // Store the job description
-      skills: [], // Array to store shortlisted skills
-      candidates: [], // Array to store shortlisted candidates' details
+      jobTitle: "", // Job Title
+      jobDescription: "", // Job Description
+      skills: [], // Extracted Skills
+      candidates: [], // Shortlisted Candidates
+      filteredCandidates: [], // Candidates after applying filters
       dropdownVisible: false,
+
+      // Flags for section visibility
+      showAddJob: true,
+      showShortlistedSection: false,
+
+      // Filters
+      selectedFilters: [],
+      filterDetails: {
+        tenGrade: "",
+        twelveGrade: "",
+        cgpa: "",
+      },
     };
   },
   methods: {
@@ -102,35 +173,28 @@ export default {
       this.$router.push("/login");
     },
     showAddJobForm() {
-      this.jobTitle = "";
-      this.jobDescription = "";
-      this.skills = []; // Clear skills when the form is reset
+      this.showAddJob = true;
+      this.showShortlistedSection = false;
+    },
+    toggleShortlistedSection() {
+      this.showAddJob = false;
+      this.showShortlistedSection = true;
     },
     async submitJobDescription() {
-      if (!this.jobDescription) {
-        alert("Please fill in the job description.");
-        return;
-      }
-
       const jobData = {
-        job_title: this.jobTitle, // Include job title in the data sent to the backend
-        job_description: this.jobDescription, // Send job description
+        job_title: this.jobTitle,
+        job_description: this.jobDescription,
       };
 
       try {
         const response = await axios.post(
-          "http://127.0.0.1:8000/hr-skills", // FastAPI endpoint for extracting skills
+          "http://127.0.0.1:8000/hr-skills",
           jobData,
           { headers: { "Content-Type": "application/json" } }
         );
 
-        console.log("Server Response:", response.data);
-        alert("Job description and skills extracted successfully!");
-
-        // Store extracted skills in the array
         this.skills = response.data.skills;
-
-        // Clear form fields after submission
+        alert("Job description and skills extracted successfully!");
         this.jobTitle = "";
         this.jobDescription = "";
       } catch (error) {
@@ -139,36 +203,26 @@ export default {
       }
     },
     shortlistCandidates() {
-      // Fetch shortlisted candidates data (This can be from an API or mock data)
-      const mockCandidatesData = [
-        {
-          name: "John Doe",
-          tenGrade: "90%",
-          twelveGrade: "85%",
-          cgpa: "8.7",
-          skills: ["Java", "Python", "Machine Learning"],
-        },
-        {
-          name: "Jane Smith",
-          tenGrade: "88%",
-          twelveGrade: "80%",
-          cgpa: "9.1",
-          skills: ["JavaScript", "Vue.js", "React"],
-        },
-        {
-          name: "Alex Johnson",
-          tenGrade: "92%",
-          twelveGrade: "89%",
-          cgpa: "8.9",
-          skills: ["C++", "Data Structures", "Algorithms"],
-        },
+      const mockCandidates = [
+        { name: "John Doe", tenGrade: "90%", twelveGrade: "85%", cgpa: "8.7", skills: ["Java", "Python"] },
+        { name: "Jane Smith", tenGrade: "88%", twelveGrade: "80%", cgpa: "9.1", skills: ["Vue.js", "React"] },
       ];
+      this.candidates = mockCandidates;
+      this.filteredCandidates = mockCandidates;
+    },
+    fetchFilteredResumes() {
+      this.filteredCandidates = this.candidates.filter((candidate) => {
+        const { tenGrade, twelveGrade, cgpa } = this.filterDetails;
 
-      // Update candidates list
-      this.candidates = mockCandidatesData;
+        return (
+          (!tenGrade || candidate.tenGrade.includes(tenGrade)) &&
+          (!twelveGrade || candidate.twelveGrade.includes(twelveGrade)) &&
+          (!cgpa || candidate.cgpa.includes(cgpa))
+        );
+      });
     },
     fetchRankingTable() {
-      // Implement the functionality to fetch the ranking table
+      // Placeholder for ranking table functionality
     },
   },
 };
