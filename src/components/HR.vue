@@ -15,7 +15,6 @@
       <div class="sidebar">
         <a @click="showAddJobForm">Add Job Description</a>
         <a @click="toggleShortlistedSection">Shortlist Candidates</a>
-        <a @click="fetchRankingTable">Ranking Table</a>
       </div>
 
       <div class="main-content">
@@ -112,29 +111,54 @@
             <button @click="fetchFilteredResumes">Fetch Resumes</button>
           </div>
 
-          <!-- Display Candidates -->
-          <table v-if="filteredCandidates.length > 0">
+          <!-- Candidates Table -->
+          <table v-if="showResumes">
             <thead>
-              <tr>
-                <th>Name</th>
-                <th>10th Grade</th>
-                <th>12th Grade</th>
-                <th>CGPA</th>
-                <th>Skills</th>
-              </tr>
-            </thead>
-            <tbody>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Similarity Score</th>
+          <th>Resume Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Aditi Himpalnerkar</td>
+          <td>0.17578607839334617</td>
+          <td><a href="https://drive.google.com/file/d/1EHoKjrqGBKj_ZMThIol0bgEpo4hQqPcx/view?usp=drive_link" target="_blank">View Resume</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Siddhi Jadhavrao</td>
+          <td>0.11904430410598647</td>
+          <td><a href="https://drive.google.com/file/d/1-2tOeyjef5r-jshbs6IViCRmaLao7F4W/view?usp=drive_link" target="_blank">View Resume</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Nidhi Agrawal</td>
+          <td>0.09867961797986956</td>
+          <td><a href="https://drive.google.com/file/d/1Ih3cu7flnc8gI3uQUbCri-m36X3Tuz0_/view?usp=drive_link" target="_blank">View Resume</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Sanket Patil</td>
+          <td>0.04356856122871383</td>
+          <td><a href="https://drive.google.com/file/d/1Q9m36Q9LsePz46qKXqd4hTrUqcn1CMdF/view?usp=drive_link" target="_blank">View Resume</a></td>
+        </tr>
+      </tbody>
+
               <tr v-for="(candidate, index) in filteredCandidates" :key="index">
+                <td>{{ index + 1 }}</td>
                 <td>{{ candidate.name }}</td>
-                <td>{{ candidate.tenGrade }}</td>
-                <td>{{ candidate.twelveGrade }}</td>
-                <td>{{ candidate.cgpa }}</td>
-                <td>{{ candidate.skills.join(', ') }}</td>
+                <td>{{ candidate.similarity_score }}</td>
+                <td><a :href="candidate.resume_link" target="_blank">View Resume</a></td>
               </tr>
-            </tbody>
+           
           </table>
         </div>
       </div>
+      
     </div>
   </div>
 </template>
@@ -155,6 +179,7 @@ export default {
       // Flags for section visibility
       showAddJob: true,
       showShortlistedSection: false,
+      showResumes: false, // to control when the resumes table should be displayed
 
       // Filters
       selectedFilters: [],
@@ -188,7 +213,7 @@ export default {
 
       try {
         const response = await axios.post(
-          "http://127.0.0.1:8000/hr-skills",
+          "http://127.0.0.1:8001/hr-skills",
           jobData,
           { headers: { "Content-Type": "application/json" } }
         );
@@ -202,34 +227,15 @@ export default {
         alert("Failed to submit job description. Please try again.");
       }
     },
-    shortlistCandidates() {
-      const mockCandidates = [
-        { name: "John Doe", tenGrade: "90%", twelveGrade: "85%", cgpa: "8.7", skills: ["Java", "Python"] },
-        { name: "Jane Smith", tenGrade: "88%", twelveGrade: "80%", cgpa: "9.1", skills: ["Vue.js", "React"] },
-      ];
-      this.candidates = mockCandidates;
-      this.filteredCandidates = mockCandidates;
-    },
-    fetchFilteredResumes() {
-      this.filteredCandidates = this.candidates.filter((candidate) => {
-        const { tenGrade, twelveGrade, cgpa } = this.filterDetails;
-
-        return (
-          (!tenGrade || candidate.tenGrade.includes(tenGrade)) &&
-          (!twelveGrade || candidate.twelveGrade.includes(twelveGrade)) &&
-          (!cgpa || candidate.cgpa.includes(cgpa))
-        );
-      });
-    },
-    fetchRankingTable() {
-      // Placeholder for ranking table functionality
+    async fetchFilteredResumes() {
+      this.showResumes = true;
+      // Add your logic to fetch filtered resumes here
     },
   },
 };
 </script>
 
 <style scoped>
-/* Styling from your first page */
 .header {
   background-color: #3f51b5;
   color: white;
@@ -337,33 +343,6 @@ button:hover {
   background-color: #303f9f;
 }
 
-.skills-section {
-  margin-top: 20px;
-  background-color: #f9f9f9;
-  padding: 15px;
-  border-radius: 5px;
-}
-
-.skills-section h3 {
-  margin-top: 0;
-}
-
-.skills-section ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.skills-section li {
-  padding: 5px;
-  background-color: #e0e0e0;
-  margin: 5px 0;
-  border-radius: 3px;
-}
-
-.shortlisted-candidates-section {
-  margin-top: 20px;
-}
-
 .shortlisted-candidates-section table {
   width: 100%;
   border-collapse: collapse;
@@ -377,6 +356,6 @@ button:hover {
 }
 
 .shortlisted-candidates-section th {
-  background-color: #f4f4f4;
+  background-color: #f2f2f2;
 }
 </style>
