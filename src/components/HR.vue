@@ -112,53 +112,29 @@
           </div>
 
           <!-- Candidates Table -->
-          <table v-if="showResumes">
+          <table v-if="filteredCandidates.length > 0">
             <thead>
-        <tr>
-          <th>Rank</th>
-          <th>Name</th>
-          <th>Similarity Score</th>
-          <th>Resume Link</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Aditi Himpalnerkar</td>
-          <td>0.17578607839334617</td>
-          <td><a href="https://drive.google.com/file/d/1EHoKjrqGBKj_ZMThIol0bgEpo4hQqPcx/view?usp=drive_link" target="_blank">View Resume</a></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Siddhi Jadhavrao</td>
-          <td>0.11904430410598647</td>
-          <td><a href="https://drive.google.com/file/d/1-2tOeyjef5r-jshbs6IViCRmaLao7F4W/view?usp=drive_link" target="_blank">View Resume</a></td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Nidhi Agrawal</td>
-          <td>0.09867961797986956</td>
-          <td><a href="https://drive.google.com/file/d/1Ih3cu7flnc8gI3uQUbCri-m36X3Tuz0_/view?usp=drive_link" target="_blank">View Resume</a></td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Sanket Patil</td>
-          <td>0.04356856122871383</td>
-          <td><a href="https://drive.google.com/file/d/1Q9m36Q9LsePz46qKXqd4hTrUqcn1CMdF/view?usp=drive_link" target="_blank">View Resume</a></td>
-        </tr>
-      </tbody>
-
+              <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Similarity Score</th>
+                <th>Resume Link</th>
+              </tr>
+            </thead>
+            <tbody>
               <tr v-for="(candidate, index) in filteredCandidates" :key="index">
                 <td>{{ index + 1 }}</td>
                 <td>{{ candidate.name }}</td>
                 <td>{{ candidate.similarity_score }}</td>
                 <td><a :href="candidate.resume_link" target="_blank">View Resume</a></td>
               </tr>
-           
+            </tbody>
           </table>
+
+          <!-- No resumes message if no data -->
+          <p v-else>No candidates found matching your criteria.</p>
         </div>
       </div>
-      
     </div>
   </div>
 </template>
@@ -172,14 +148,12 @@ export default {
       jobTitle: "", // Job Title
       jobDescription: "", // Job Description
       skills: [], // Extracted Skills
-      candidates: [], // Shortlisted Candidates
       filteredCandidates: [], // Candidates after applying filters
       dropdownVisible: false,
 
       // Flags for section visibility
       showAddJob: true,
       showShortlistedSection: false,
-      showResumes: false, // to control when the resumes table should be displayed
 
       // Filters
       selectedFilters: [],
@@ -213,7 +187,7 @@ export default {
 
       try {
         const response = await axios.post(
-          "http://127.0.0.1:8001/hr-skills",
+          "http://172.20.10.14:8000/extract-hr-skills",
           jobData,
           { headers: { "Content-Type": "application/json" } }
         );
@@ -228,11 +202,28 @@ export default {
       }
     },
     async fetchFilteredResumes() {
-      this.showResumes = true;
-      // Add your logic to fetch filtered resumes here
+      //const { tenGrade, twelveGrade, cgpa } = this.filterDetails;
+
+      try {
+        const response = await axios.post("http://172.20.10.14:8000/filter_candidates", {
+          tenGrade: parseFloat(this.filterDetails.tenGrade),
+          twelveGrade: parseFloat(this.filterDetails.twelveGrade),
+          cgpa: parseFloat(this.filterDetails.cgpa),
+        });
+
+        // Expecting the response to have a list of candidates with rank, name, and drive link
+        this.filteredCandidates = response.data;
+
+        // If no candidates match the filter, the table will still show but indicate that no candidates were found
+      } catch (error) {
+        console.error("Error fetching filtered resumes:", error);
+        alert("Fetch Failed.");
+      }
     },
   },
 };
+
+
 </script>
 
 <style scoped>
@@ -358,4 +349,4 @@ button:hover {
 .shortlisted-candidates-section th {
   background-color: #f2f2f2;
 }
-</style>
+</style> 

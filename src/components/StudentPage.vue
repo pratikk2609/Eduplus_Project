@@ -15,7 +15,7 @@
       <!-- Sidebar -->
       <div class="sidebar">
         <a @click="showUploadForm">Upload Resume</a>
-        <!-- <a @click="fetchApplicationStatus">View Application Status</a> -->
+        <a @click="fetchApplicationStatus">View Application Status</a>
       </div>
 
       <!-- Main Content Area -->
@@ -117,7 +117,7 @@ export default {
 
       try {
         // Replace this URL with your backend API endpoint for handling resume uploads
-        const response = await axios.post("http://127.0.0.1:8001/generate-response", formData, {
+        const response = await axios.post("http://172.20.10.14:8000/extract-resume-entities", formData, {
           headers: { "Content-Type": "multipart/form-data" },
         });
 
